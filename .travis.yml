@@ -35,8 +35,7 @@ after_script:
 after_success:
   - lerna run ci:coveralls --scope=webpack-bundle
   - lerna publish -m "bump versions [ci skip]" --conventional-commits --yes
-  - git push
 
-branches:
+git nches:
   except:
     - /^v\d+\.\d+\.\d+$/
