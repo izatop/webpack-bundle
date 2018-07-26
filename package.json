@@ -1,0 +1,18 @@
+{
+    "name": "@nobus/webpack",
+    "version": "0.0.0-development",
+    "private": true,
+    "repository": "https://github.com/nobus/webpack",
+    "author": {
+        "name": "Artur Bier",
+        "email": "izatop@gmail.com"
+    },
+    "workspaces": [
+        "packages/webpack-bundle"
+    ],
+    "devDependencies": {
+        "lerna": "^2.11.0",
+        "typescript": "^3.0.0-rc"
+    },
+    "license": "MIT"
+}

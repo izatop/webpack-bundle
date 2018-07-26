@@ -1,0 +1,81 @@
+{
+    "name": "webpack-bundle-react",
+    "version": "0.1.0-development",
+    "repository": "https://github.com/izatop/webpack-bundle",
+    "author": {
+        "name": "Artur Bier",
+        "email": "izatop@gmail.com"
+    },
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist/"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "@sirian/ts-extra-types": "^1.1.1",
+        "@types/webpack": "^4.4.6"
+    },
+    "scripts": {
+        "ci:build": "yarn clean && yarn lint && yarn test && yarn build",
+        "clean": "yarn build:clean; yarn test:clean",
+        "cs:check": "yarn prettier -l './*.json' '{src,tests}/**/*.{ts,tsx}'",
+        "cs:fix": "yarn prettier --write './*.json' '{src,tests}/**/*.{ts,tsx}'",
+        "build": "yarn build:clean && tsc",
+        "build:clean": "rimraf dist",
+        "build:watch": "yarn build --watch",
+        "lint": "yarn cs:fix && yarn tslint",
+        "lint:fix": "yarn cs:fix && yarn tslint:fix",
+        "tslint": "yarn tslint:check-config && yarn tslint:lint",
+        "tslint:lint": "tslint '{src,tests}/**/*'",
+        "tslint:fix": "yarn tslint:lint --fix",
+        "tslint:check-config": "tslint-config-prettier-check ../../tslint.json",
+        "test": "yarn test:clean && jest --coverage",
+        "test:clean": "rimraf coverage",
+        "test:watch": "jest --watch"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "prettier": {
+        "singleQuote": false,
+        "trailingComma": "es5",
+        "bracketSpacing": false,
+        "arrowParens": "always",
+        "printWidth": 120
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn ci:build"
+        }
+    },
+    "jest": {
+        "roots": [
+            "<rootDir>/tests"
+        ],
+        "transform": {
+            "^.+\\.ts$": "ts-jest"
+        },
+        "testRegex": "/test[^/]*\\.tsx?$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "json",
+            "js"
+        ]
+    },
+    "devDependencies": {
+        "@types/jest": "^23.3.0",
+        "coveralls": "^3.0.2",
+        "husky": "^1.0.0-rc.13",
+        "jest": "^23.4.1",
+        "prettier": "^1.13.7",
+        "rimraf": "^2.6.2",
+        "semantic-release": "^15.8.0",
+        "travis-deploy-once": "^5.0.1",
+        "ts-jest": "^23.0.1",
+        "tslint": "^5.11.0",
+        "tslint-config-prettier": "^1.14.0",
+        "typescript": "^3.0.0-rc"
+    }
+}
