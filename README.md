@@ -10,17 +10,17 @@ bundles/options or both.
 
 Install the package via npm or yarn
 
-`yarn add --dev @izatop/webpack-bundle` 
+`yarn add --dev webpack-bundle` 
 
 or 
 
-`npm i -D @izatop/webpack-bundle`
+`npm i -D webpack-bundle`
 
 The package provide a simple API to define configuration. See a how-to example:
 
 ```typescript
 // webpack.config.ts
-import {Bundle, Options} from "@izatop/webpack-bundle";
+import {Bundle, Options} from "webpack-bundle";
 
 const config = new Bundle();
 config.set(
@@ -47,7 +47,7 @@ You can use custom (predefined) options like this:
 
 ```typescript
 // MySPAModule.ts
-import {Options, Loaders} from "@izatop/webpack-bundle";
+import {Options, Loaders} from "webpack-bundle";
 
 export class MySPAModule extends Options.Module {
     constructor() {
@@ -67,7 +67,7 @@ use:
 
 ```typescript
 // webpack.config.ts
-import {Bundle} from "@izatop/webpack-bundle";
+import {Bundle} from "webpack-bundle";
 import {MySPAModule} from "./MySPAModule";
 
 const bundle = new Bundle(
@@ -85,7 +85,7 @@ Write your bundles to your taste or like this:
 
 ```typescript
 // MySPABundle.ts
-import {Bundle, Options, Loaders} from "@izatop/webpack-bundle";
+import {Bundle, Options, Loaders} from "webpack-bundle";
 
 export class MySPABundle extends Bundle {
     constructor() {
