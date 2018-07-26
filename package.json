@@ -1,18 +1,21 @@
 {
-    "name": "@nobus/webpack",
-    "version": "0.0.0-development",
-    "private": true,
-    "repository": "https://github.com/nobus/webpack",
-    "author": {
-        "name": "Artur Bier",
-        "email": "izatop@gmail.com"
-    },
-    "workspaces": [
-        "packages/webpack-bundle"
-    ],
-    "devDependencies": {
-        "lerna": "^2.11.0",
-        "typescript": "^3.0.0-rc"
-    },
-    "license": "MIT"
+  "name": "webpack-bundle",
+  "version": "0.0.0-development",
+  "private": true,
+  "repository": "https://github.com/izatop/webpack-bundle",
+  "author": {
+    "name": "Artur Bier",
+    "email": "izatop@gmail.com"
+  },
+  "workspaces": [
+    "packages/webpack-bundle"
+  ],
+  "devDependencies": {
+    "lerna": "^2.11.0",
+    "semantic-release": "^15.8.1",
+    "semantic-release-monorepo": "^6.0.3",
+    "typescript": "^3.0.0-rc",
+    "travis-deploy-once": "^5.0.1"
+  },
+  "license": "MIT"
 }
