@@ -16,10 +16,14 @@ branches:
   - master
 
 before_install:
-  - greenkeeper-lockfile-update
   - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
 
 install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH=`yarn global bin`:$PATH
+  - yarn global add greenkeeper-lockfile@1
+  - yarn global add lerna
+  - greenkeeper-lockfile-update
   - yarn --pure-lockfile
 
 before_script:
