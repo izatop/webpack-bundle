@@ -49,15 +49,13 @@ You can use custom (predefined) options like this:
 
 ```typescript
 // MySPAModule.ts
-import {Options, Loaders} from "webpack-bundle";
+import {Options, Loader} from "webpack-bundle";
 
 export class MySPAModule extends Options.Module {
     constructor() {
         super([
-            new Loaders.TypeScriptLoader(),
-            new Loaders.StyleLoader(),
-            new Loaders.FileLoader(),
-            new Loaders.UrlLoader(),
+            new Loader({test: /\.tsx?$/, loader: "ts"}),
+            new Loader({test: /\.css?$/, loader: "style"}),
             // add some more loaders...
         ]);
     }
