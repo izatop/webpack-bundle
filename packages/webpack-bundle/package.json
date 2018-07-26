@@ -16,7 +16,7 @@
     },
     "scripts": {
         "ci:build": "yarn clean && yarn lint && yarn test && yarn build",
-        "ci:deploy": "yarn travis-deploy-once \"yarn semantic-release -e semantic-release-monorepo\"",
+        "ci:deploy": "yarn run semantic-release -e semantic-release-monorepo",
         "ci:coveralls": "cat ./coverage/lcov.info | yarn coveralls",
         "clean": "yarn build:clean; yarn test:clean",
         "cs:check": "yarn prettier -l './*.json' '{src,tests}/**/*.{ts,tsx}'",
