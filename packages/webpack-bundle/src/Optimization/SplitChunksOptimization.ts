@@ -3,6 +3,6 @@ import {Optimization} from "../Configuration";
 
 export class SplitChunksOptimization extends Optimization {
     constructor(options: webpack.Options.SplitChunksOptions) {
-        super({foo: 1});
+        super({splitChunks: options});
     }
 }
