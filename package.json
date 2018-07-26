@@ -12,10 +12,12 @@
   ],
   "devDependencies": {
     "lerna": "^2.11.0",
-    "semantic-release": "^15.8.1",
-    "semantic-release-monorepo": "^6.0.3",
-    "typescript": "^3.0.0-rc",
-    "travis-deploy-once": "^5.0.1"
+    "typescript": "^3.0.0-rc"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "semantic-release": "15.6.3",
+    "semantic-release-monorepo": "^6.0.3",
+    "semantic-release-monorepo-hooks": "^2.1.1"
+  }
 }

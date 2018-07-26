@@ -1,9 +1,9 @@
 language: node_js
 
-cache:
-  yarn: true
-  directories:
-    - node_modules
+#cache:
+#  yarn: true
+#  directories:
+#    - node_modules
 
 notifications:
   email: false
@@ -16,20 +16,21 @@ before_install:
   - export PATH=`yarn global bin`:$PATH
   - yarn global add greenkeeper-lockfile@1
   - yarn global add lerna
+  - yarn list
 
 before_script:
-  - greenkeeper-lockfile-update
+  #- greenkeeper-lockfile-update
+  - lerna bootstrap
 
 script:
-  - lerna bootstrap
   - lerna run ci:build --scope=webpack-bundle
 
-after_script:
-  - greenkeeper-lockfile-upload
+#after_script:
+#  - greenkeeper-lockfile-upload
 
 after_success:
   - lerna run ci:coveralls --scope=webpack-bundle
-  - lerna run ci:deploy --scope=webpack-bundle
+  - yarn lerna exec --concurrency 1 "npx --no-install semantic-release -e semantic-release-monorepo"
 
 branches:
   except:
