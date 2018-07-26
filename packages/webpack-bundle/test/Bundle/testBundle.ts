@@ -1,9 +1,16 @@
-import {Bundle} from "../../src";
+import {Bundle, Loader} from "../../src";
 import * as props from "../../src/Configuration/index";
-import {TypeScriptLoader} from "../../src/Loaders";
 
 test("Bundle", () => {
-    const module = new props.Module([new TypeScriptLoader()])
+    const module = new props.Module([
+        new Loader({
+            test: /\.tsx?$/,
+            loader: "ts",
+            options: {
+                transpileOnly: true,
+            },
+        }),
+    ])
         .addRule(new props.ModuleRule({use: ["loader1", "loader2"]}));
 
     const config = new Bundle(
@@ -28,7 +35,7 @@ test("Bundle", () => {
             entry: "entry.js",
             module: {
                 rules: [
-                    {loader: "ts"},
+                    {loader: "ts", test: /\.tsx?$/, options: {transpileOnly: true}},
                     {use: ["loader1", "loader2"]},
                 ],
             },

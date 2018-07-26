@@ -1,7 +1,8 @@
-# Webpack
+# Webpack Bundle
 
-[![Build Status](https://travis-ci.org/izatop/webpack-bundle.svg?branch=master)](https://travis-ci.org/nobus/webpack-bundle)
-[![Coverage Status](https://coveralls.io/repos/github/izatop/webpack-bundle/badge.svg)](https://coveralls.io/github/nobus/webpack-bundle)
+[![Build Status](https://travis-ci.org/izatop/webpack-bundle.svg?branch=master)](https://travis-ci.org/izatop/webpack-bundle)
+[![Coverage Status](https://coveralls.io/repos/github/izatop/webpack-bundle/badge.svg)](https://coveralls.io/github/izatop/webpack-bundle)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 The package helps to generate a webpack configuration and predefined
 bundles/options or both.
@@ -85,14 +86,20 @@ Write your bundles to your taste or like this:
 
 ```typescript
 // MySPABundle.ts
-import {Bundle, Options, Loaders} from "webpack-bundle";
+import {Bundle, Options, Loader} from "webpack-bundle";
 
 export class MySPABundle extends Bundle {
     constructor() {
         super(
             new Options.Mode("development"),
             new Options.Module([
-                new Loaders.TypeScriptLoader(),
+                new Loader({
+                    test: /\.tsx?$/,
+                    loader: "ts",
+                    options: {
+                        transpileOnly: true
+                    }
+                }),
             ]),
             // some other options...
         );
