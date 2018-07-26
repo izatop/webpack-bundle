@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/izatop/webpack-bundle/compare/v0.1.0...v0.1.1) (2018-07-26)
+
+
+### Bug Fixes
+
+* configure greenkeeper again ([fbd8f84](https://github.com/izatop/webpack-bundle/commit/fbd8f84))
+
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2018-07-26)
 
