@@ -1,9 +1,9 @@
 {
-    "groups": {
-        "default": {
-            "packages": [
-                "packages/webpack-bundle/package.json"
-            ]
-        }
+  "groups": {
+    "default": {
+      "packages": [
+        "packages/webpack-bundle/package.json"
+      ]
     }
+  }
 }
