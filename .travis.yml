@@ -28,7 +28,6 @@ install:
 
 before_script:
   - git checkout master
-  - lerna updated --json
 
 script:
   - lerna run ci:build
