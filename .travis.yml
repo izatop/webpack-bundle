@@ -9,28 +9,33 @@ notifications:
   email: false
 
 node_js:
-  - '10'
+  - "9"
+
+branches:
+  only:
+  - master
 
 before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH=`yarn global bin`:$PATH
-  - yarn global add greenkeeper-lockfile@1
-  - yarn global add lerna
-  - yarn list
+  - greenkeeper-lockfile-update
+  - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+
+install:
+  - yarn --pure-lockfile
 
 before_script:
-  #- greenkeeper-lockfile-update
-  - lerna bootstrap
+  - git checkout master
+  - lerna updated --json
 
 script:
-  - lerna run ci:build --scope=webpack-bundle
+  - lerna run ci:build
 
-#after_script:
-#  - greenkeeper-lockfile-upload
+after_script:
+  - greenkeeper-lockfile-upload
 
 after_success:
   - lerna run ci:coveralls --scope=webpack-bundle
-  - yarn lerna exec --concurrency 1 "npx --no-install semantic-release -e semantic-release-monorepo"
+  - lerna publish -m "bump versions [ci skip]" --conventional-commits --yes
+  - git push
 
 branches:
   except:
