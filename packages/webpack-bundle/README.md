@@ -3,7 +3,6 @@
 [![Build Status](https://travis-ci.org/izatop/webpack-bundle.svg?branch=master)](https://travis-ci.org/izatop/webpack-bundle)
 [![Coverage Status](https://coveralls.io/repos/github/izatop/webpack-bundle/badge.svg)](https://coveralls.io/github/izatop/webpack-bundle)
 [![Greenkeeper badge](https://badges.greenkeeper.io/izatop/webpack-bundle.svg)](https://greenkeeper.io/)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 The package helps to generate a webpack configuration and predefined
 bundles/options or both.

@@ -16,7 +16,6 @@ branches:
   - master
 
 before_install:
-  - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH=`yarn global bin`:$PATH
   - yarn global add greenkeeper-lockfile@2
@@ -24,6 +23,7 @@ before_install:
 
 install:
   - lerna bootstrap
+  - lerna ls
 
 before_script:
   - greenkeeper-lockfile-update
@@ -32,11 +32,14 @@ script:
   - lerna run ci:build
 
 after_script:
+  - git branch
   - greenkeeper-lockfile-upload
 
 after_success:
+  - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
   - lerna run ci:coveralls --scope=webpack-bundle
-  - lerna publish -m "bump versions [ci skip]" --conventional-commits --yes
+  - lerna publish --conventional-commits --yes
+  - git diff
 
 git nches:
   except:
