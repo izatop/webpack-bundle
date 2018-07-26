@@ -10,7 +10,7 @@ bundles/options or both.
 
 ## Getting starting
 
-:qInstall the package via npm or yarn
+Install the package via npm or yarn
 
 `yarn add --dev webpack-bundle` 
 

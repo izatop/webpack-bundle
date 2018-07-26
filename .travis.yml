@@ -17,17 +17,16 @@ branches:
 
 before_install:
   - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
-
-install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH=`yarn global bin`:$PATH
   - yarn global add greenkeeper-lockfile@2
   - yarn global add lerna
-  - greenkeeper-lockfile-update
-  - yarn --pure-lockfile
+
+install:
+  - lerna bootstrap
 
 before_script:
-  - git checkout master
+  - greenkeeper-lockfile-update
 
 script:
   - lerna run ci:build
