@@ -1,36 +1,36 @@
 language: node_js
 
 cache:
-    yarn: true
-    directories:
-        - node_modules
+  yarn: true
+  directories:
+    - node_modules
 
 notifications:
-    email: false
+  email: false
 
 node_js:
-    - '10'
+  - '10'
 
 before_install:
-    - curl -o- -L https://yarnpkg.com/install.sh | bash
-    - export PATH=`yarn global bin`:$PATH
-    - yarn global add greenkeeper-lockfile@1
-    - yarn global add lerna
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH=`yarn global bin`:$PATH
+  - yarn global add greenkeeper-lockfile@1
+  - yarn global add lerna
 
 before_script:
-    - greenkeeper-lockfile-update
+  - greenkeeper-lockfile-update
 
 script:
-    - lerna run ci:build
+  - lerna bootstrap
+  - lerna run ci:build --scope=webpack-bundle
 
 after_script:
-    - greenkeeper-lockfile-upload
+  - greenkeeper-lockfile-upload
 
 after_success:
-    - cd packages/webpack-bundle
-    - cat ./coverage/lcov.info | yarn coveralls
-    - yarn travis-deploy-once "yarn semantic-release"
+  - lerna run ci:coveralls --scope=webpack-bundle
+  - lerna run ci:deploy --scope=webpack-bundle
 
 branches:
-    except:
-        - /^v\d+\.\d+\.\d+$/
+  except:
+    - /^v\d+\.\d+\.\d+$/

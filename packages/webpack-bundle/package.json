@@ -16,6 +16,8 @@
     },
     "scripts": {
         "ci:build": "yarn clean && yarn lint && yarn test && yarn build",
+        "ci:deploy": "yarn travis-deploy-once \"yarn semantic-release\"",
+        "ci:coveralls": "cat ./coverage/lcov.info | yarn coveralls",
         "clean": "yarn build:clean; yarn test:clean",
         "cs:check": "yarn prettier -l './*.json' '{src,tests}/**/*.{ts,tsx}'",
         "cs:fix": "yarn prettier --write './*.json' '{src,tests}/**/*.{ts,tsx}'",
