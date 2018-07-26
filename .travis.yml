@@ -15,17 +15,19 @@ before_install:
     - curl -o- -L https://yarnpkg.com/install.sh | bash
     - export PATH=`yarn global bin`:$PATH
     - yarn global add greenkeeper-lockfile@1
+    - yarn global add lerna
 
 before_script:
     - greenkeeper-lockfile-update
 
 script:
-    - yarn ci:build
+    - lerna run ci:build
 
 after_script:
     - greenkeeper-lockfile-upload
 
 after_success:
+    - cd packages/webpack-bundle
     - cat ./coverage/lcov.info | yarn coveralls
     - yarn travis-deploy-once "yarn semantic-release"
 

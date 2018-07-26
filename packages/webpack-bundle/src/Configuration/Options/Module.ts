@@ -10,7 +10,7 @@ export class Module extends ObjectOption<webpack.Module> {
         this.value = {
             rules: [],
             ...value,
-        }
+        };
     }
 
     public addRule(...rule: ModuleRule[]) {
@@ -21,10 +21,7 @@ export class Module extends ObjectOption<webpack.Module> {
     public serialize() {
         const module: webpack.Module = {
             ...this.value,
-            rules: [
-                ...this.rules.map((rule) => rule.serialize()),
-                ...this.value.rules,
-            ],
+            rules: [...this.rules.map((rule) => rule.serialize()), ...this.value.rules],
         };
 
         return {
