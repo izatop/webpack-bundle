@@ -10,7 +10,7 @@ export class FileLoader extends Loader {
             options: {
                 name: "[hash].[ext]",
                 outputPath: "assets/",
-            }
+            },
         });
     }
 }

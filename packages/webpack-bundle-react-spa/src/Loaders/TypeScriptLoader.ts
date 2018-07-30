@@ -7,6 +7,6 @@ export class TypeScriptLoader extends Loader {
             options,
             loader: "ts",
             test: /\.tsx?/,
-        })
+        });
     }
 }

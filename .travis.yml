@@ -27,6 +27,7 @@ install:
 
 before_script:
   - greenkeeper-lockfile-update
+  - git checkout master
 
 script:
   - lerna run ci:build
@@ -40,6 +41,7 @@ after_success:
   - lerna run ci:coveralls --scope=webpack-bundle
   - lerna publish --conventional-commits --yes
   - git diff
+  - git push
 
 branches:
   except:

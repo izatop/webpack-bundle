@@ -10,9 +10,9 @@ export class BundleOptimization extends Options.Optimization {
                         name: "vendor",
                         chunks: "all",
                         priority: 0,
-                    }
+                    },
                 },
             },
-        })
+        });
     }
 }
