@@ -16,7 +16,6 @@
     },
     "scripts": {
         "ci:build": "yarn clean && yarn lint && yarn test && yarn build",
-        "ci:deploy": "yarn run semantic-release -e semantic-release-monorepo",
         "ci:coveralls": "cat ./coverage/lcov.info | yarn coveralls",
         "clean": "yarn build:clean; yarn test:clean",
         "cs:check": "yarn prettier -l './*.json' '{src,tests}/**/*.{ts,tsx}'",
@@ -49,6 +48,7 @@
             "^.+\\.ts$": "ts-jest"
         },
         "testRegex": "/test[^/]*\\.tsx?$",
+        "testEnvironment": "node",
         "moduleFileExtensions": [
             "ts",
             "tsx",

@@ -1,4 +1,8 @@
 import webpackDevServer from "webpack-dev-server";
 import {ObjectOption} from "../ObjectOption";
 
-export class DevServer extends ObjectOption<webpackDevServer.Configuration> {}
+export class DevServer extends ObjectOption<webpackDevServer.Configuration> {
+    public get key() {
+        return "optimization";
+    }
+}

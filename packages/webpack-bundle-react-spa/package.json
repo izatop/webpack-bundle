@@ -1,6 +1,6 @@
 {
     "name": "webpack-bundle-react-spa",
-    "version": "0.1.0-development",
+    "version": "0.1.1",
     "repository": "https://github.com/izatop/webpack-bundle",
     "author": {
         "name": "Artur Bier",
@@ -11,16 +11,51 @@
     "files": [
         "dist/"
     ],
-    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "ci:build": "yarn clean && yarn lint && yarn build",
+        "ci:coveralls": "cat ./coverage/lcov.info | yarn coveralls",
+        "clean": "yarn build:clean;",
+        "cs:check": "yarn prettier -l './*.json' '{src}/**/*.{ts,tsx}'",
+        "cs:fix": "yarn prettier --write './*.json' '{src}/**/*.{ts,tsx}'",
+        "build": "yarn build:clean && tsc",
+        "build:clean": "rimraf dist",
+        "build:watch": "yarn build --watch",
+        "lint": "yarn cs:fix && yarn tslint",
+        "lint:fix": "yarn cs:fix && yarn tslint:fix",
+        "tslint": "yarn tslint:check-config && yarn tslint:lint",
+        "tslint:lint": "tslint '{src}/**/*'",
+        "tslint:fix": "yarn tslint:lint --fix",
+        "tslint:check-config": "tslint-config-prettier-check ../../tslint.json"
+    },
+    "prettier": {
+        "singleQuote": false,
+        "trailingComma": "es5",
+        "bracketSpacing": false,
+        "arrowParens": "always",
+        "printWidth": 120
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn ci:build"
+        }
+    },
     "dependencies": {
         "@sirian/ts-extra-types": "^1.1.1",
+        "@types/html-webpack-plugin": "^3.2.0",
         "@types/webpack": "^4.4.6",
         "@types/webpack-dev-server": "^2.9.5",
+        "html-webpack-plugin": "^3.2.0",
         "webpack": "^4.16.2",
+        "webpack-bundle": "^0.1.1",
         "webpack-dev-server": "^3.1.5"
     },
     "peerDependencies": {
         "webpack": "^4.16.2",
+        "file-loader": "^1.1.11",
+        "ts-loader": "^4.4.2",
         "webpack-dev-server": "^3.1.5"
     },
     "devDependencies": {
@@ -35,54 +70,5 @@
         "tslint-config-prettier": "^1.14.0",
         "typescript": "^3.0.0-rc"
     },
-    "scripts": {
-        "ci:build": "yarn clean && yarn lint && yarn test && yarn build",
-        "ci:deploy": "yarn travis-deploy-once \"yarn semantic-release\"",
-        "ci:coveralls": "cat ./coverage/lcov.info | yarn coveralls",
-        "clean": "yarn build:clean; yarn test:clean",
-        "cs:check": "yarn prettier -l './*.json' '{src,tests}/**/*.{ts,tsx}'",
-        "cs:fix": "yarn prettier --write './*.json' '{src,tests}/**/*.{ts,tsx}'",
-        "build": "yarn build:clean && tsc",
-        "build:clean": "rimraf dist",
-        "build:watch": "yarn build --watch",
-        "lint": "yarn cs:fix && yarn tslint",
-        "lint:fix": "yarn cs:fix && yarn tslint:fix",
-        "tslint": "yarn tslint:check-config && yarn tslint:lint",
-        "tslint:lint": "tslint '{src,tests}/**/*'",
-        "tslint:fix": "yarn tslint:lint --fix",
-        "tslint:check-config": "tslint-config-prettier-check ../../tslint.json",
-        "test": "yarn test:clean && jest --coverage",
-        "test:clean": "rimraf coverage",
-        "test:watch": "jest --watch"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "prettier": {
-        "singleQuote": false,
-        "trailingComma": "es5",
-        "bracketSpacing": false,
-        "arrowParens": "always",
-        "printWidth": 120
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "yarn ci:build"
-        }
-    },
-    "jest": {
-        "roots": [
-            "<rootDir>/tests"
-        ],
-        "transform": {
-            "^.+\\.ts$": "ts-jest"
-        },
-        "testRegex": "/test[^/]*\\.tsx?$",
-        "moduleFileExtensions": [
-            "ts",
-            "tsx",
-            "json",
-            "js"
-        ]
-    }
+    "license": "MIT"
 }

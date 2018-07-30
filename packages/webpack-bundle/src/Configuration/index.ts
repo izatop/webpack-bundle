@@ -4,6 +4,7 @@ export * from "./Options/Cache";
 export * from "./Options/Context";
 export * from "./Options/Debug";
 export * from "./Options/DevTool";
+export * from "./Options/DevServer";
 export * from "./Options/Entry";
 export * from "./Options/Externals";
 export * from "./Options/Mode";

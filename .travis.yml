@@ -41,6 +41,6 @@ after_success:
   - lerna publish --conventional-commits --yes
   - git diff
 
-git nches:
+branches:
   except:
     - /^v\d+\.\d+\.\d+$/

@@ -1,5 +1,5 @@
+import {Option} from "../../src";
 import * as options from "../../src/Configuration";
-import {Option} from "../../src/Configuration/Option";
 
 test("Configuration Test", () => {
     const branches = [
@@ -9,6 +9,7 @@ test("Configuration Test", () => {
         "Context",
         "Debug",
         "DevTool",
+        "DevServer",
         "Entry",
         "Externals",
         "Mode",
@@ -37,7 +38,7 @@ test("Configuration Test", () => {
 
     const index: any = options;
     for (const branch of branches) {
-        const cls: {new (): Option} = index[branch];
+        const cls: {new(): Option<any>} = index[branch];
         expect(Option.isPrototypeOf(index[branch]))
             .toBeTruthy();
 

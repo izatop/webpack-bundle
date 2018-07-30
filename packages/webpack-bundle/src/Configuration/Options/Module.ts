@@ -13,6 +13,10 @@ export class Module extends ObjectOption<webpack.Module> {
         };
     }
 
+    public get key() {
+        return "module";
+    }
+
     public addRule(...rule: ModuleRule[]) {
         this.rules.push(...rule);
         return this;
