@@ -2,8 +2,6 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es2017",
-        "rootDir": "src",
-        "outDir": "dist",
         "declaration": true,
         "lib": ["esnext"],
         "esModuleInterop": true,
@@ -16,6 +14,5 @@
         "strictPropertyInitialization": true,
         "strictFunctionTypes": true,
         "experimentalDecorators": true
-    },
-    "include": ["src"]
+    }
 }

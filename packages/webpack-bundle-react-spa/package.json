@@ -15,32 +15,11 @@
         "access": "public"
     },
     "scripts": {
-        "ci:build": "yarn clean && yarn lint && yarn build",
-        "ci:coveralls": "cat ./coverage/lcov.info | yarn coveralls",
-        "clean": "yarn build:clean;",
-        "cs:check": "yarn prettier -l './*.json' '{src}/**/*.{ts,tsx}'",
-        "cs:fix": "yarn prettier --write './*.json' '{src}/**/*.{ts,tsx}'",
+        "ci:build": "yarn clean && yarn build",
+        "clean": "yarn build:clean",
         "build": "yarn build:clean && tsc",
         "build:clean": "rimraf dist",
-        "build:watch": "yarn build --watch",
-        "lint": "yarn cs:fix && yarn tslint",
-        "lint:fix": "yarn cs:fix && yarn tslint:fix",
-        "tslint": "yarn tslint:check-config && yarn tslint:lint",
-        "tslint:lint": "tslint '{src}/**/*'",
-        "tslint:fix": "yarn tslint:lint --fix",
-        "tslint:check-config": "tslint-config-prettier-check ../../tslint.json"
-    },
-    "prettier": {
-        "singleQuote": false,
-        "trailingComma": "es5",
-        "bracketSpacing": false,
-        "arrowParens": "always",
-        "printWidth": 120
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "yarn ci:build"
-        }
+        "build:watch": "yarn build --watch"
     },
     "dependencies": {
         "@sirian/ts-extra-types": "^1.1.1",
@@ -53,9 +32,9 @@
         "webpack-dev-server": "^3.1.5"
     },
     "peerDependencies": {
-        "webpack": "^4.16.2",
         "file-loader": "^1.1.11",
         "ts-loader": "^4.4.2",
+        "webpack": "^4.16.2",
         "webpack-dev-server": "^3.1.5"
     },
     "devDependencies": {

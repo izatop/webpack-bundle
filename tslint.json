@@ -2,9 +2,6 @@
     "extends": ["tslint:latest", "tslint-config-prettier"],
     "rules": {
         "object-literal-sort-keys": false,
-        "member-ordering": [
-            true, {"order": "fields-first"}
-        ]
+        "member-ordering": [true, {"order": "fields-first"}]
     }
-
 }

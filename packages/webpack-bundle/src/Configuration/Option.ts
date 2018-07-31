@@ -11,5 +11,9 @@ export abstract class Option<T> {
         return this.constructor.name;
     }
 
+    public getValue() {
+        return this.value;
+    }
+
     public abstract serialize(): unknown;
 }

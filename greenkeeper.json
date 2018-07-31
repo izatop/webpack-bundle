@@ -1,10 +1,11 @@
 {
-  "groups": {
-    "default": {
-      "packages": [
-        "packages/webpack-bundle/package.json",
-        "packages/webpack-bundle-react-spa/package.json"
-      ]
+    "groups": {
+        "default": {
+            "packages": [
+                "packages/webpack-bundle/package.json",
+                "packages/webpack-bundle-react-spa/package.json",
+                "packages/webpack-bundle-antd/package.json"
+            ]
+        }
     }
-  }
 }

@@ -1,48 +1,54 @@
-import {Option} from "../../src";
+import {ObjectOption, Option} from "../../src";
 import * as options from "../../src/Configuration";
 
 test("Configuration Test", () => {
-    const branches = [
-        "AMD",
-        "Bail",
-        "Cache",
-        "Context",
-        "Debug",
-        "DevTool",
-        "DevServer",
-        "Entry",
-        "Externals",
-        "Mode",
-        "Module",
-        "ModuleRule",
-        "Name",
-        "Node",
-        "Optimization",
-        "Output",
-        "Parallelism",
-        "Performance",
-        "Plugins",
-        "Profile",
-        "RecordsInputPath",
-        "RecordsOutputPath",
-        "RecordsPath",
-        "Resolve",
-        "ResolveLoader",
-        "Stats",
-        "Target",
-        "Watch",
-        "WatchOptions",
+    interface IBranch {
+        new(...args: any[]): Option<any> | ObjectOption<any>
+    }
+
+    const branches: IBranch[] = [
+        options.AMD,
+        options.Bail,
+        options.Cache,
+        options.Context,
+        options.Debug,
+        options.DevTool,
+        options.DevServer,
+        options.Entry,
+        options.Externals,
+        options.Mode,
+        options.Module,
+        options.ModuleRule,
+        options.Name,
+        options.Node,
+        options.Optimization,
+        options.Output,
+        options.Parallelism,
+        options.Performance,
+        options.Plugins,
+        options.Profile,
+        options.RecordsInputPath,
+        options.RecordsOutputPath,
+        options.RecordsPath,
+        options.Resolve,
+        options.ResolveLoader,
+        options.Stats,
+        options.Target,
+        options.Watch,
+        options.WatchOptions,
     ];
 
-    expect(Object.keys(options)).toMatchObject(branches);
-
-    const index: any = options;
     for (const branch of branches) {
-        const cls: {new(): Option<any>} = index[branch];
-        expect(Option.isPrototypeOf(index[branch]))
+        expect(Option.isPrototypeOf(branch))
             .toBeTruthy();
 
-        expect(new cls() instanceof Option)
+        expect(new branch() instanceof Option)
             .toBeTruthy();
+
+        const option = new branch();
+        if (option instanceof ObjectOption) {
+            expect(option.key)
+                .toEqual(branch.prototype.constructor.name.replace(/^[A-Z]+/, (chunk: string) => chunk.toLowerCase()))
+        }
     }
 });

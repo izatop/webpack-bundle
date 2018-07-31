@@ -1,9 +1,9 @@
 language: node_js
 
-#cache:
-#  yarn: true
-#  directories:
-#    - node_modules
+cache:
+  yarn: true
+  directories:
+    - node_modules
 
 notifications:
   email: false
@@ -13,35 +13,33 @@ node_js:
 
 branches:
   only:
-  - master
+    - master
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH=`yarn global bin`:$PATH
+  - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
   - yarn global add greenkeeper-lockfile@2
   - yarn global add lerna
 
 install:
   - lerna bootstrap
-  - lerna ls
 
 before_script:
   - greenkeeper-lockfile-update
+  - git config --global user.email "travis@travis-ci.org"
+  - git config --global user.name "Travis CI"
   - git checkout master
 
 script:
   - lerna run ci:build
+  - lerna publish --conventional-commits --yes --git-remote https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}
 
 after_script:
-  - git branch
   - greenkeeper-lockfile-upload
 
 after_success:
-  - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
   - lerna run ci:coveralls --scope=webpack-bundle
-  - lerna publish --conventional-commits --yes
-  - git diff
-  - git push
 
 branches:
   except:

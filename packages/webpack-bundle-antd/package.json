@@ -1,5 +1,5 @@
 {
-    "name": "webpack-bundle",
+    "name": "webpack-bundle-antd",
     "version": "0.1.1",
     "repository": "https://github.com/izatop/webpack-bundle",
     "author": {
@@ -23,16 +23,30 @@
     },
     "dependencies": {
         "@sirian/ts-extra-types": "^1.1.1",
+        "@types/html-webpack-plugin": "^3.2.0",
         "@types/webpack": "^4.4.6",
         "@types/webpack-dev-server": "^2.9.5",
+        "html-webpack-plugin": "^3.2.0",
         "webpack": "^4.16.2",
+        "webpack-bundle": "^0.1.1",
         "webpack-dev-server": "^3.1.5"
     },
     "peerDependencies": {
+        "file-loader": "^1.1.11",
+        "ts-loader": "^4.4.2",
         "webpack": "^4.16.2",
         "webpack-dev-server": "^3.1.5"
     },
     "devDependencies": {
+        "@types/jest": "^23.3.0",
+        "coveralls": "^3.0.2",
+        "husky": "^1.0.0-rc.13",
+        "jest": "^23.4.1",
+        "prettier": "^1.13.7",
+        "rimraf": "^2.6.2",
+        "ts-jest": "^23.0.1",
+        "tslint": "^5.11.0",
+        "tslint-config-prettier": "^1.14.0",
         "typescript": "^3.0.0-rc"
     },
     "license": "MIT"

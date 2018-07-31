@@ -3,6 +3,6 @@ import {ObjectOption} from "../ObjectOption";
 
 export class DevServer extends ObjectOption<webpackDevServer.Configuration> {
     public get key() {
-        return "optimization";
+        return "devServer";
     }
 }
