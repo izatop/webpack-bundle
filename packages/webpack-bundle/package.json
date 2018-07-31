@@ -1,6 +1,6 @@
 {
     "name": "webpack-bundle",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "repository": "https://github.com/izatop/webpack-bundle",
     "author": {
         "name": "Artur Bier",
@@ -36,5 +36,5 @@
         "typescript": "^3.0.0-rc"
     },
     "license": "MIT",
-    "gitHead": "b8e3eccc89673a1ea2d98208d41ab80e10d920fa"
+    "gitHead": "35435df3d4b99b4c781521b49874e7a0f4a2ed18"
 }
