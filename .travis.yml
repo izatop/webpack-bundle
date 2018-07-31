@@ -34,16 +34,15 @@ before_script:
   - git checkout master
 
 script:
-  - git remote -v
+  - yarn test
   - lerna run ci:build
   - lerna publish --conventional-commits --yes
-  - git status
 
 after_script:
   - greenkeeper-lockfile-upload
 
 after_success:
-  - lerna run ci:coveralls --scope=webpack-bundle
+  - yarn ci:coveralls
 
 branches:
   except:
