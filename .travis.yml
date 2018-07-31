@@ -33,7 +33,7 @@ before_script:
 
 script:
   - lerna run ci:build
-  - lerna publish --conventional-commits --yes --git-remote https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}
+  - lerna publish --conventional-commits --yes --git-remote https://${GH_TOKEN}@github.com/izatop/webpack-bundle.git
 
 after_script:
   - greenkeeper-lockfile-upload
