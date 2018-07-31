@@ -1,6 +1,6 @@
 {
     "name": "webpack-bundle",
-    "version": "0.0.0-development",
+    "version": "0.2.0",
     "private": true,
     "repository": "https://github.com/izatop/webpack-bundle",
     "author": {
@@ -9,6 +9,7 @@
     },
     "workspaces": [
         "packages/webpack-bundle",
+        "packages/webpack-bundle-antd",
         "packages/webpack-bundle-react-spa"
     ],
     "scripts": {
@@ -57,7 +58,7 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lerna run ci:build"
+            "pre-commit": "lerna run lint"
         }
     },
     "devDependencies": {

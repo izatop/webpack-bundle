@@ -27,13 +27,14 @@ install:
 
 before_script:
   - greenkeeper-lockfile-update
+  - git checkout master
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
-  - git checkout master
+  - git remote set-url origin https://${GH_TOKEN}@github.com/izatop/webpack-bundle.git
 
 script:
   - lerna run ci:build
-  - lerna publish --conventional-commits --yes --git-remote https://${GH_TOKEN}@github.com/izatop/webpack-bundle.git
+  - lerna publish --conventional-commits --yes
 
 after_script:
   - greenkeeper-lockfile-upload
