@@ -1,0 +1,14 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/izatop/webpack-bundle/compare/v0.1.1...v0.3.0) (2018-07-31)
+
+
+### Bug Fixes
+
+* move scripts to root ([990b122](https://github.com/izatop/webpack-bundle/commit/990b122))
+* package version ([ccf8ebe](https://github.com/izatop/webpack-bundle/commit/ccf8ebe))
+* update deps and ci script ([6d9e0bb](https://github.com/izatop/webpack-bundle/commit/6d9e0bb))
