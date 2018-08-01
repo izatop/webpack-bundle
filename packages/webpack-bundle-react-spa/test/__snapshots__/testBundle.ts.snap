@@ -2,10 +2,10 @@
 
 exports[`ReactSPABundle should generate valid configuration 1`] = `
 Object {
-  "context": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/test/src",
+  "context": "/app/src",
   "devServer": Object {
     "compress": true,
-    "contentBase": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/test/dist",
+    "contentBase": "/app/dist",
     "historyApiFallback": true,
     "hot": true,
     "port": 9000,
@@ -46,7 +46,7 @@ Object {
   "output": Object {
     "chunkFilename": "[hash:6]/chunks/[name].js",
     "filename": "[hash:6]/[name].js",
-    "path": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/test/dist",
+    "path": "/app/dist",
     "publicPath": "/",
   },
   "plugins": Array [
@@ -64,7 +64,7 @@ Object {
         "meta": Object {},
         "minify": false,
         "showErrors": true,
-        "template": "/Users/arturbier/Development/public/nobus/webpack/node_modules/html-webpack-plugin/default_index.ejs",
+        "template": "<PROJECT_ROOT>/node_modules/html-webpack-plugin/default_index.ejs",
         "templateParameters": [Function],
         "title": "Webpack App",
         "xhtml": false,
@@ -81,12 +81,12 @@ Object {
     ],
     "modules": Array [
       "node_modules",
-      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/test/src",
+      "/app/src",
     ],
   },
   "resolveLoader": Object {
     "modules": Array [
-      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/node_modules",
+      "<PROJECT_ROOT>/packages/webpack-bundle-react-spa/node_modules",
       "node_modules",
     ],
   },
@@ -95,7 +95,7 @@ Object {
 
 exports[`ReactSPABundle should generate valid configuration 2`] = `
 Object {
-  "context": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/test/src",
+  "context": "/app/src",
   "entry": "entry",
   "mode": "production",
   "module": Object {
@@ -132,7 +132,7 @@ Object {
   "output": Object {
     "chunkFilename": "[hash:6]/chunks/[name].js",
     "filename": "[hash:6]/[name].js",
-    "path": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/test/dist",
+    "path": "/app/dist",
     "publicPath": "/",
   },
   "plugins": Array [
@@ -150,7 +150,7 @@ Object {
         "meta": Object {},
         "minify": false,
         "showErrors": true,
-        "template": "/Users/arturbier/Development/public/nobus/webpack/node_modules/html-webpack-plugin/default_index.ejs",
+        "template": "<PROJECT_ROOT>/node_modules/html-webpack-plugin/default_index.ejs",
         "templateParameters": [Function],
         "title": "Webpack App",
         "xhtml": false,
@@ -166,12 +166,12 @@ Object {
     ],
     "modules": Array [
       "node_modules",
-      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/test/src",
+      "/app/src",
     ],
   },
   "resolveLoader": Object {
     "modules": Array [
-      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/node_modules",
+      "<PROJECT_ROOT>/packages/webpack-bundle-react-spa/node_modules",
       "node_modules",
     ],
   },

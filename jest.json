@@ -4,6 +4,9 @@
         "<rootDir>/packages/webpack-bundle-antd/test",
         "<rootDir>/packages/webpack-bundle-react-spa/test"
     ],
+    "snapshotSerializers": [
+        "jest-serializer-path"
+    ],
     "transform": {
         "^.+\\.ts$": "ts-jest"
     },

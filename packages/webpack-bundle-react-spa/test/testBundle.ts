@@ -1,7 +1,12 @@
 import {ReactSPABundle} from "../src";
 
 it("ReactSPABundle should generate valid configuration", () => {
-    const config1 = new ReactSPABundle(module)
+    const moduleMock: NodeModule = {
+        ...module,
+        filename: "/app/webpack.config.js",
+    };
+
+    const config1 = new ReactSPABundle(moduleMock)
         .getWebpackConfig();
 
     expect(config1.mode)
@@ -9,7 +14,7 @@ it("ReactSPABundle should generate valid configuration", () => {
     expect(config1)
         .toMatchSnapshot();
 
-    const config2 = new ReactSPABundle(module, "production")
+    const config2 = new ReactSPABundle(moduleMock, "production")
         .getWebpackConfig();
 
     expect(config2.mode)

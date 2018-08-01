@@ -2,10 +2,10 @@
 
 exports[`ReactSPABundle should generate valid configuration 1`] = `
 Object {
-  "context": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/test/src",
+  "context": "/app/src",
   "devServer": Object {
     "compress": true,
-    "contentBase": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/test/dist",
+    "contentBase": "/app/dist",
     "historyApiFallback": true,
     "hot": true,
     "port": 9000,
@@ -33,7 +33,7 @@ Object {
       Object {
         "test": /\\\\\\.less\\$/,
         "use": Array [
-          "/Users/arturbier/Development/public/nobus/webpack/node_modules/mini-css-extract-plugin/dist/loader.js",
+          "<PROJECT_ROOT>/node_modules/mini-css-extract-plugin/dist/loader.js",
           Object {
             "loader": "css-loader",
           },
@@ -48,7 +48,7 @@ Object {
       Object {
         "test": /\\\\\\.css\\$/,
         "use": Array [
-          "/Users/arturbier/Development/public/nobus/webpack/node_modules/mini-css-extract-plugin/dist/loader.js",
+          "<PROJECT_ROOT>/node_modules/mini-css-extract-plugin/dist/loader.js",
           Object {
             "loader": "css-loader",
           },
@@ -77,7 +77,7 @@ Object {
   "output": Object {
     "chunkFilename": "chunks/[name].js?[hash:6]",
     "filename": "[name].js?[hash:6]",
-    "path": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/test/dist",
+    "path": "/app/dist",
     "publicPath": "/",
   },
   "plugins": Array [
@@ -101,7 +101,7 @@ Object {
         "meta": Object {},
         "minify": false,
         "showErrors": true,
-        "template": "/Users/arturbier/Development/public/nobus/webpack/node_modules/html-webpack-plugin/default_index.ejs",
+        "template": "<PROJECT_ROOT>/node_modules/html-webpack-plugin/default_index.ejs",
         "templateParameters": [Function],
         "title": "Webpack App",
         "xhtml": false,
@@ -118,12 +118,12 @@ Object {
     ],
     "modules": Array [
       "node_modules",
-      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/test/src",
+      "/app/src",
     ],
   },
   "resolveLoader": Object {
     "modules": Array [
-      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/node_modules",
+      "<PROJECT_ROOT>/packages/webpack-bundle-antd/node_modules",
       "node_modules",
     ],
   },
@@ -132,7 +132,7 @@ Object {
 
 exports[`ReactSPABundle should generate valid configuration 2`] = `
 Object {
-  "context": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/test/src",
+  "context": "/app/src",
   "entry": "entry",
   "mode": "production",
   "module": Object {
@@ -156,7 +156,7 @@ Object {
       Object {
         "test": /\\\\\\.less\\$/,
         "use": Array [
-          "/Users/arturbier/Development/public/nobus/webpack/node_modules/mini-css-extract-plugin/dist/loader.js",
+          "<PROJECT_ROOT>/node_modules/mini-css-extract-plugin/dist/loader.js",
           Object {
             "loader": "css-loader",
           },
@@ -171,7 +171,7 @@ Object {
       Object {
         "test": /\\\\\\.css\\$/,
         "use": Array [
-          "/Users/arturbier/Development/public/nobus/webpack/node_modules/mini-css-extract-plugin/dist/loader.js",
+          "<PROJECT_ROOT>/node_modules/mini-css-extract-plugin/dist/loader.js",
           Object {
             "loader": "css-loader",
           },
@@ -200,7 +200,7 @@ Object {
   "output": Object {
     "chunkFilename": "chunks/[name].js?[hash:6]",
     "filename": "[name].js?[hash:6]",
-    "path": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/test/dist",
+    "path": "/app/dist",
     "publicPath": "/",
   },
   "plugins": Array [
@@ -224,7 +224,7 @@ Object {
         "meta": Object {},
         "minify": false,
         "showErrors": true,
-        "template": "/Users/arturbier/Development/public/nobus/webpack/node_modules/html-webpack-plugin/default_index.ejs",
+        "template": "<PROJECT_ROOT>/node_modules/html-webpack-plugin/default_index.ejs",
         "templateParameters": [Function],
         "title": "Webpack App",
         "xhtml": false,
@@ -240,12 +240,12 @@ Object {
     ],
     "modules": Array [
       "node_modules",
-      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/test/src",
+      "/app/src",
     ],
   },
   "resolveLoader": Object {
     "modules": Array [
-      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/node_modules",
+      "<PROJECT_ROOT>/packages/webpack-bundle-antd/node_modules",
       "node_modules",
     ],
   },
