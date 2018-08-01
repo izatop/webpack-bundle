@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/izatop/webpack-bundle/compare/v0.4.0...v0.5.0) (2018-08-01)
+
+
+### Features
+
+* update bundles ([fec315d](https://github.com/izatop/webpack-bundle/commit/fec315d))
+
+
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/izatop/webpack-bundle/compare/v0.1.1...v0.4.0) (2018-07-31)
 
