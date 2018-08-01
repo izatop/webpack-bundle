@@ -2,10 +2,10 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es2017",
-        "rootDir": "src",
-        "outDir": "dist",
         "declaration": true,
         "lib": ["esnext"],
+        "rootDir": "src",
+        "outDir": "dist",
         "esModuleInterop": true,
         "sourceMap": true,
         "strict": true,
