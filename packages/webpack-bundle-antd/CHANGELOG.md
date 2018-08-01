@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.1"></a>
+## [0.6.1](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-antd@0.6.0...webpack-bundle-antd@0.6.1) (2018-08-01)
+
+**Note:** Version bump only for package webpack-bundle-antd
+
+
+
+
+
 <a name="0.6.0"></a>
 # 0.6.0 (2018-08-01)
 
