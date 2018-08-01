@@ -18,8 +18,8 @@ export class ReactSPABundle extends Bundle {
             new Options.Output({
                 path: join(dirname(context.filename), "dist"),
                 publicPath: "/",
-                filename: "[hash:6]/[name].js",
-                chunkFilename: "[hash:6]/chunks/[name].js",
+                filename: "[name].js?[hash:6]",
+                chunkFilename: "chunks/[name].js?[hash:6]",
             }),
             new Options.Module([
                 new Loaders.TypeScriptLoader({
@@ -27,6 +27,7 @@ export class ReactSPABundle extends Bundle {
                         transpileOnly: !(mode === "production"),
                     },
                 }),
+                new Loaders.StyleLoader({}),
                 new Loaders.FileLoader({}),
             ]),
             new Options.ResolveLoader({
