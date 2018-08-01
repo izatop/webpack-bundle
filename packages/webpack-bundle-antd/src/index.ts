@@ -1,7 +1,5 @@
-import {ReactSPABundle} from "./Bundle/ReactSPABundle";
+import {AntdBundle} from "./Bundle/AntdBundle";
 
-export * from "./Loaders/TypeScriptLoader";
-export * from "./Optimizations/BundleOptimization";
-export * from "./Bundle/ReactSPABundle";
+export * from "./Bundle/AntdBundle";
 
-export default ReactSPABundle;
+export default AntdBundle;

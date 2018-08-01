@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReactSPABundle should generate valid configuration 1`] = `
+Object {
+  "context": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/test/src",
+  "devServer": Object {
+    "compress": true,
+    "contentBase": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/test/dist",
+    "historyApiFallback": true,
+    "hot": true,
+    "port": 9000,
+  },
+  "entry": "entry",
+  "mode": "test",
+  "module": Object {
+    "rules": Array [
+      Object {
+        "loader": "ts",
+        "options": Object {
+          "transpileOnly": true,
+        },
+        "test": /\\\\\\.tsx\\?/,
+      },
+      Object {
+        "loader": "file",
+        "options": Object {
+          "name": "[hash].[ext]",
+          "outputPath": "assets/",
+        },
+        "test": /\\\\\\.\\(woff\\(2\\)\\?\\|ttf\\|eot\\|svg\\|jpg\\|jpeg\\|png\\|gif\\)\\(\\\\\\?v=\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\)\\?\\$/,
+      },
+    ],
+  },
+  "optimization": Object {
+    "splitChunks": Object {
+      "cacheGroups": Object {
+        "vendor": Object {
+          "chunks": "all",
+          "name": "vendor",
+          "priority": 0,
+          "test": /\\\\/node_modules\\\\//,
+        },
+      },
+    },
+  },
+  "output": Object {
+    "chunkFilename": "[hash:6]/chunks/[name].js",
+    "filename": "[hash:6]/[name].js",
+    "path": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/test/dist",
+    "publicPath": "/",
+  },
+  "plugins": Array [
+    HtmlWebpackPlugin {
+      "options": Object {
+        "cache": true,
+        "chunks": "all",
+        "chunksSortMode": "auto",
+        "compile": true,
+        "excludeChunks": Array [],
+        "favicon": false,
+        "filename": "index.html",
+        "hash": false,
+        "inject": true,
+        "meta": Object {},
+        "minify": false,
+        "showErrors": true,
+        "template": "/Users/arturbier/Development/public/nobus/webpack/node_modules/html-webpack-plugin/default_index.ejs",
+        "templateParameters": [Function],
+        "title": "Webpack App",
+        "xhtml": false,
+      },
+    },
+    [Function],
+  ],
+  "resolve": Object {
+    "extensions": Array [
+      ".ts",
+      ".tsx",
+      ".js",
+      ".jsx",
+    ],
+    "modules": Array [
+      "node_modules",
+      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/test/src",
+    ],
+  },
+  "resolveLoader": Object {
+    "modules": Array [
+      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/node_modules",
+      "node_modules",
+    ],
+  },
+}
+`;
+
+exports[`ReactSPABundle should generate valid configuration 2`] = `
+Object {
+  "context": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/test/src",
+  "entry": "entry",
+  "mode": "production",
+  "module": Object {
+    "rules": Array [
+      Object {
+        "loader": "ts",
+        "options": Object {
+          "transpileOnly": false,
+        },
+        "test": /\\\\\\.tsx\\?/,
+      },
+      Object {
+        "loader": "file",
+        "options": Object {
+          "name": "[hash].[ext]",
+          "outputPath": "assets/",
+        },
+        "test": /\\\\\\.\\(woff\\(2\\)\\?\\|ttf\\|eot\\|svg\\|jpg\\|jpeg\\|png\\|gif\\)\\(\\\\\\?v=\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\)\\?\\$/,
+      },
+    ],
+  },
+  "optimization": Object {
+    "splitChunks": Object {
+      "cacheGroups": Object {
+        "vendor": Object {
+          "chunks": "all",
+          "name": "vendor",
+          "priority": 0,
+          "test": /\\\\/node_modules\\\\//,
+        },
+      },
+    },
+  },
+  "output": Object {
+    "chunkFilename": "[hash:6]/chunks/[name].js",
+    "filename": "[hash:6]/[name].js",
+    "path": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/test/dist",
+    "publicPath": "/",
+  },
+  "plugins": Array [
+    HtmlWebpackPlugin {
+      "options": Object {
+        "cache": true,
+        "chunks": "all",
+        "chunksSortMode": "auto",
+        "compile": true,
+        "excludeChunks": Array [],
+        "favicon": false,
+        "filename": "index.html",
+        "hash": false,
+        "inject": true,
+        "meta": Object {},
+        "minify": false,
+        "showErrors": true,
+        "template": "/Users/arturbier/Development/public/nobus/webpack/node_modules/html-webpack-plugin/default_index.ejs",
+        "templateParameters": [Function],
+        "title": "Webpack App",
+        "xhtml": false,
+      },
+    },
+  ],
+  "resolve": Object {
+    "extensions": Array [
+      ".ts",
+      ".tsx",
+      ".js",
+      ".jsx",
+    ],
+    "modules": Array [
+      "node_modules",
+      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/test/src",
+    ],
+  },
+  "resolveLoader": Object {
+    "modules": Array [
+      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-react-spa/node_modules",
+      "node_modules",
+    ],
+  },
+}
+`;

@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReactSPABundle should generate valid configuration 1`] = `
+Object {
+  "context": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/test/src",
+  "devServer": Object {
+    "compress": true,
+    "contentBase": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/test/dist",
+    "historyApiFallback": true,
+    "hot": true,
+    "port": 9000,
+  },
+  "entry": "entry",
+  "mode": "test",
+  "module": Object {
+    "rules": Array [
+      Object {
+        "loader": "ts",
+        "options": Object {
+          "getCustomTransformers": [Function],
+          "transpileOnly": true,
+        },
+        "test": /\\\\\\.tsx\\?/,
+      },
+      Object {
+        "loader": "file",
+        "options": Object {
+          "name": "[hash].[ext]",
+          "outputPath": "assets/",
+        },
+        "test": /\\\\\\.\\(woff\\(2\\)\\?\\|ttf\\|eot\\|svg\\|jpg\\|jpeg\\|png\\|gif\\)\\(\\\\\\?v=\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\)\\?\\$/,
+      },
+      Object {
+        "test": /\\\\\\.less\\$/,
+        "use": Array [
+          "/Users/arturbier/Development/public/nobus/webpack/node_modules/mini-css-extract-plugin/dist/loader.js",
+          Object {
+            "loader": "css-loader",
+          },
+          Object {
+            "loader": "less-loader",
+            "options": Object {
+              "javascriptEnabled": true,
+            },
+          },
+        ],
+      },
+      Object {
+        "test": /\\\\\\.css\\$/,
+        "use": Array [
+          "/Users/arturbier/Development/public/nobus/webpack/node_modules/mini-css-extract-plugin/dist/loader.js",
+          Object {
+            "loader": "css-loader",
+          },
+        ],
+      },
+    ],
+  },
+  "optimization": Object {
+    "splitChunks": Object {
+      "cacheGroups": Object {
+        "vendor": Object {
+          "chunks": "all",
+          "name": "vendor",
+          "priority": 0,
+          "test": /\\\\/node_modules\\\\//,
+        },
+      },
+    },
+  },
+  "output": Object {
+    "chunkFilename": "chunks/[name].js?[hash:6]",
+    "filename": "[name].js?[hash:6]",
+    "path": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/test/dist",
+    "publicPath": "/",
+  },
+  "plugins": Array [
+    MiniCssExtractPlugin {
+      "options": Object {
+        "chunkFilename": "assets/[name].css",
+        "filename": "assets/[name].css",
+      },
+    },
+    HtmlWebpackPlugin {
+      "options": Object {
+        "cache": true,
+        "chunks": "all",
+        "chunksSortMode": "auto",
+        "compile": true,
+        "excludeChunks": Array [],
+        "favicon": false,
+        "filename": "index.html",
+        "hash": false,
+        "inject": true,
+        "meta": Object {},
+        "minify": false,
+        "showErrors": true,
+        "template": "/Users/arturbier/Development/public/nobus/webpack/node_modules/html-webpack-plugin/default_index.ejs",
+        "templateParameters": [Function],
+        "title": "Webpack App",
+        "xhtml": false,
+      },
+    },
+    [Function],
+  ],
+  "resolve": Object {
+    "extensions": Array [
+      ".ts",
+      ".tsx",
+      ".js",
+      ".jsx",
+    ],
+    "modules": Array [
+      "node_modules",
+      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/test/src",
+    ],
+  },
+  "resolveLoader": Object {
+    "modules": Array [
+      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/node_modules",
+      "node_modules",
+    ],
+  },
+}
+`;
+
+exports[`ReactSPABundle should generate valid configuration 2`] = `
+Object {
+  "context": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/test/src",
+  "entry": "entry",
+  "mode": "production",
+  "module": Object {
+    "rules": Array [
+      Object {
+        "loader": "ts",
+        "options": Object {
+          "getCustomTransformers": [Function],
+          "transpileOnly": false,
+        },
+        "test": /\\\\\\.tsx\\?/,
+      },
+      Object {
+        "loader": "file",
+        "options": Object {
+          "name": "[hash].[ext]",
+          "outputPath": "assets/",
+        },
+        "test": /\\\\\\.\\(woff\\(2\\)\\?\\|ttf\\|eot\\|svg\\|jpg\\|jpeg\\|png\\|gif\\)\\(\\\\\\?v=\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\)\\?\\$/,
+      },
+      Object {
+        "test": /\\\\\\.less\\$/,
+        "use": Array [
+          "/Users/arturbier/Development/public/nobus/webpack/node_modules/mini-css-extract-plugin/dist/loader.js",
+          Object {
+            "loader": "css-loader",
+          },
+          Object {
+            "loader": "less-loader",
+            "options": Object {
+              "javascriptEnabled": true,
+            },
+          },
+        ],
+      },
+      Object {
+        "test": /\\\\\\.css\\$/,
+        "use": Array [
+          "/Users/arturbier/Development/public/nobus/webpack/node_modules/mini-css-extract-plugin/dist/loader.js",
+          Object {
+            "loader": "css-loader",
+          },
+        ],
+      },
+    ],
+  },
+  "optimization": Object {
+    "splitChunks": Object {
+      "cacheGroups": Object {
+        "vendor": Object {
+          "chunks": "all",
+          "name": "vendor",
+          "priority": 0,
+          "test": /\\\\/node_modules\\\\//,
+        },
+      },
+    },
+  },
+  "output": Object {
+    "chunkFilename": "chunks/[name].js?[hash:6]",
+    "filename": "[name].js?[hash:6]",
+    "path": "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/test/dist",
+    "publicPath": "/",
+  },
+  "plugins": Array [
+    MiniCssExtractPlugin {
+      "options": Object {
+        "chunkFilename": "assets/[name].css",
+        "filename": "assets/[name].css",
+      },
+    },
+    HtmlWebpackPlugin {
+      "options": Object {
+        "cache": true,
+        "chunks": "all",
+        "chunksSortMode": "auto",
+        "compile": true,
+        "excludeChunks": Array [],
+        "favicon": false,
+        "filename": "index.html",
+        "hash": false,
+        "inject": true,
+        "meta": Object {},
+        "minify": false,
+        "showErrors": true,
+        "template": "/Users/arturbier/Development/public/nobus/webpack/node_modules/html-webpack-plugin/default_index.ejs",
+        "templateParameters": [Function],
+        "title": "Webpack App",
+        "xhtml": false,
+      },
+    },
+  ],
+  "resolve": Object {
+    "extensions": Array [
+      ".ts",
+      ".tsx",
+      ".js",
+      ".jsx",
+    ],
+    "modules": Array [
+      "node_modules",
+      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/test/src",
+    ],
+  },
+  "resolveLoader": Object {
+    "modules": Array [
+      "/Users/arturbier/Development/public/nobus/webpack/packages/webpack-bundle-antd/node_modules",
+      "node_modules",
+    ],
+  },
+}
+`;

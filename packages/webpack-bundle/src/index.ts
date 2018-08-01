@@ -1,8 +1,8 @@
 import {Bundle} from "./Bundle";
 import * as Options from "./Configuration";
-import {Loader} from "./Loader/Loader";
+import * as Loaders from "./Loader";
 
-export {Bundle, Loader, Options};
+export {Bundle, Loaders, Options};
 export * from "./Configuration/Option";
 export * from "./Configuration/ScalarOption";
 export * from "./Configuration/ObjectOption";

@@ -1,9 +1,9 @@
-import {Bundle, Loader} from "../../src";
+import {Bundle, Loaders} from "../../src";
 import * as props from "../../src/Configuration/index";
 
 test("Bundle", () => {
     const module = new props.Module([
-        new Loader({
+        new Loaders.Loader({
             test: /\.tsx?$/,
             loader: "ts",
             options: {

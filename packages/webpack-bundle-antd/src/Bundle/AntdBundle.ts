@@ -1,12 +1,14 @@
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import {default as path, dirname, join} from "path";
 import webpack from "webpack";
 import {Bundle, IWebpackValue, Loaders, Options} from "webpack-bundle";
+import {TypeScriptCustomLoader} from "./Loaders/TypeScriptCustomLoader";
 import {BundleOptimization} from "./Optimizations/BundleOptimization";
 
 const DEFAULT_MODE = (process.env.NODE_ENV || "development") as IWebpackValue<"mode">;
 
-export class ReactSPABundle extends Bundle {
+export class AntdBundle extends Bundle {
     constructor(context: NodeModule, mode: IWebpackValue<"mode"> = DEFAULT_MODE) {
         super(
             new Options.Mode(mode),
@@ -19,16 +21,32 @@ export class ReactSPABundle extends Bundle {
             new Options.Output({
                 path: join(dirname(context.filename), "dist"),
                 publicPath: "/",
-                filename: "[hash:6]/[name].js",
-                chunkFilename: "[hash:6]/chunks/[name].js",
+                filename: "[name].js?[hash:6]",
+                chunkFilename: "chunks/[name].js?[hash:6]",
             }),
             new Options.Module([
-                new Loaders.TypeScriptLoader({
-                    options: {
-                        transpileOnly: !(mode === "production"),
-                    },
-                }),
+                new TypeScriptCustomLoader(mode),
                 new Loaders.FileLoader({}),
+                new Loaders.Loader({
+                    test: /\.less$/,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        {loader: "css-loader"},
+                        {
+                            loader: "less-loader",
+                            options: {
+                                javascriptEnabled: true,
+                            },
+                        },
+                    ],
+                }),
+                new Loaders.Loader({
+                    test: /\.css$/,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        {loader: "css-loader"},
+                    ],
+                }),
             ]),
             new Options.ResolveLoader({
                 modules: [
@@ -39,7 +57,13 @@ export class ReactSPABundle extends Bundle {
             new BundleOptimization(),
         );
 
-        const plugins = [new HtmlWebpackPlugin()];
+        const plugins = [
+            new MiniCssExtractPlugin({
+                filename: "assets/[name].css",
+            }),
+            new HtmlWebpackPlugin(),
+        ];
+
         if (mode !== "production") {
             plugins.push(webpack.HotModuleReplacementPlugin);
             this.set(new Options.DevServer({

@@ -11,10 +11,6 @@ notifications:
 node_js:
   - "9"
 
-branches:
-  only:
-    - master
-
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH=`yarn global bin`:$PATH
@@ -34,6 +30,7 @@ before_script:
   - git checkout master
 
 script:
+  - yarn lint
   - yarn test
   - lerna run ci:build
   - lerna publish --conventional-commits --yes

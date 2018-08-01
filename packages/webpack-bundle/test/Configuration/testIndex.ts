@@ -3,7 +3,7 @@ import * as options from "../../src/Configuration";
 
 test("Configuration Test", () => {
     interface IBranch {
-        new(...args: any[]): Option<any> | ObjectOption<any>
+        new(...args: any[]): Option<any> | ObjectOption<any>;
     }
 
     const branches: IBranch[] = [
@@ -48,7 +48,7 @@ test("Configuration Test", () => {
         const option = new branch();
         if (option instanceof ObjectOption) {
             expect(option.key)
-                .toEqual(branch.prototype.constructor.name.replace(/^[A-Z]+/, (chunk: string) => chunk.toLowerCase()))
+                .toEqual(branch.prototype.constructor.name.replace(/^[A-Z]+/, (chunk: string) => chunk.toLowerCase()));
         }
     }
 });

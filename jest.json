@@ -1,0 +1,26 @@
+{
+    "roots": [
+        "<rootDir>/packages/webpack-bundle/test",
+        "<rootDir>/packages/webpack-bundle-antd/test",
+        "<rootDir>/packages/webpack-bundle-react-spa/test"
+    ],
+    "transform": {
+        "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "/test[^/]*\\.tsx?$",
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+        "webpack-bundle/dist/"
+    ],
+    "moduleFileExtensions": [
+        "ts",
+        "tsx",
+        "json",
+        "js"
+    ],
+    "globals": {
+        "ts-jest": {
+            "tsConfigFile": "tsconfig.test.json"
+        }
+    }
+}
