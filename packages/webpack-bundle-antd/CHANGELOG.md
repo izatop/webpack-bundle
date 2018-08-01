@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.5"></a>
+## [0.6.5](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-antd@0.6.4...webpack-bundle-antd@0.6.5) (2018-08-01)
+
+
+### Bug Fixes
+
+* **ts:** update tsconfig.json ([bb88efd](https://github.com/izatop/webpack-bundle/commit/bb88efd))
+
+
+
+
+
 <a name="0.6.4"></a>
 ## [0.6.4](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-antd@0.6.3...webpack-bundle-antd@0.6.4) (2018-08-01)
 
