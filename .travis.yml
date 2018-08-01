@@ -31,8 +31,8 @@ before_script:
 
 script:
   - yarn lint
-  - yarn test
   - lerna run ci:build
+  - yarn test
   - lerna publish --conventional-commits --yes
 
 after_script:
@@ -42,5 +42,5 @@ after_success:
   - yarn ci:coveralls
 
 branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
+  only:
+    - master

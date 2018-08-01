@@ -59,6 +59,12 @@ Object {
   "optimization": Object {
     "splitChunks": Object {
       "cacheGroups": Object {
+        "style": Object {
+          "chunks": "all",
+          "enforce": true,
+          "name": "style",
+          "test": /\\\\\\.css\\$/,
+        },
         "vendor": Object {
           "chunks": "all",
           "name": "vendor",
@@ -176,6 +182,12 @@ Object {
   "optimization": Object {
     "splitChunks": Object {
       "cacheGroups": Object {
+        "style": Object {
+          "chunks": "all",
+          "enforce": true,
+          "name": "style",
+          "test": /\\\\\\.css\\$/,
+        },
         "vendor": Object {
           "chunks": "all",
           "name": "vendor",

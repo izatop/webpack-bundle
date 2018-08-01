@@ -11,6 +11,12 @@ export class BundleOptimization extends Options.Optimization {
                         chunks: "all",
                         priority: 0,
                     },
+                    style: {
+                        name: "style",
+                        test: /\.css$/,
+                        chunks: "all",
+                        enforce: true,
+                    },
                 },
             },
         });
