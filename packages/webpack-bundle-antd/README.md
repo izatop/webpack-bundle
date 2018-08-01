@@ -1,19 +1,16 @@
-# webpack-bundle-react-spa
+# webpack-bundle-antd
 
-The package provide a common React SPA configuration for 
-Webpack with TypeScript and File loaders.
+The package provide a common Ant Design configuration for Webpack.
 
 ## Usage
 
-First do install `webpack-bundle-react-spa` and its peer dependencies
+First do install `webpack-bundle-antd` and its peer dependencies
 and then write simple Webpack configuration:
 
 ```typescript
 // webpack.config.ts
-import ReactSPABundle from "webpack-bundle-react-spa";
+import ReactSPABundle from "webpack-bundle-antd";
 
-const config = new ReactSPABundle();
-
-export default config.setDevServer()
-    getWebpackConfig();
+const config = new AntdBundle();
+export default config.getWebpackConfig();
 ```

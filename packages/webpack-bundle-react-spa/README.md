@@ -1,7 +1,6 @@
 # webpack-bundle-react-spa
 
-The package provide a common React SPA configuration for 
-Webpack with TypeScript and File loaders.
+The package provide a common React SPA configuration for Webpack.
 
 ## Usage
 
@@ -13,7 +12,5 @@ and then write simple Webpack configuration:
 import ReactSPABundle from "webpack-bundle-react-spa";
 
 const config = new ReactSPABundle();
-
-export default config.setDevServer()
-    getWebpackConfig();
+export default config.getWebpackConfig();
 ```

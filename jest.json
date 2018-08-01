@@ -10,7 +10,8 @@
     "testRegex": "/test[^/]*\\.tsx?$",
     "testEnvironment": "node",
     "coveragePathIgnorePatterns": [
-        "webpack-bundle/dist/"
+        "webpack-bundle/dist/",
+        "node_modules"
     ],
     "moduleFileExtensions": [
         "ts",
