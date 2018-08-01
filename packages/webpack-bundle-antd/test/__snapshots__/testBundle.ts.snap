@@ -38,7 +38,7 @@ AntdBundle {
       "rules": Array [
         TypeScriptCustomLoader {
           "value": Object {
-            "loader": "ts",
+            "loader": "ts-loader",
             "options": Object {
               "getCustomTransformers": [Function],
               "transpileOnly": true,
@@ -48,7 +48,7 @@ AntdBundle {
         },
         FileLoader {
           "value": Object {
-            "loader": "file",
+            "loader": "file-loader",
             "options": Object {
               "name": "[hash].[ext]",
               "outputPath": "assets/",
@@ -199,7 +199,7 @@ AntdBundle {
       "rules": Array [
         TypeScriptCustomLoader {
           "value": Object {
-            "loader": "ts",
+            "loader": "ts-loader",
             "options": Object {
               "getCustomTransformers": [Function],
               "transpileOnly": false,
@@ -209,7 +209,7 @@ AntdBundle {
         },
         FileLoader {
           "value": Object {
-            "loader": "file",
+            "loader": "file-loader",
             "options": Object {
               "name": "[hash].[ext]",
               "outputPath": "assets/",

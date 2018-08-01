@@ -38,7 +38,7 @@ ReactSPABundle {
       "rules": Array [
         TypeScriptLoader {
           "value": Object {
-            "loader": "ts",
+            "loader": "ts-loader",
             "options": Object {
               "transpileOnly": true,
             },
@@ -47,7 +47,7 @@ ReactSPABundle {
         },
         FileLoader {
           "value": Object {
-            "loader": "file",
+            "loader": "file-loader",
             "options": Object {
               "name": "[hash].[ext]",
               "outputPath": "assets/",
@@ -113,7 +113,12 @@ ReactSPABundle {
             "xhtml": false,
           },
         },
-        [Function],
+        HotModuleReplacementPlugin {
+          "fullBuildTimeout": 200,
+          "multiStep": undefined,
+          "options": Object {},
+          "requestTimeout": 10000,
+        },
       ],
     },
   ],
@@ -158,7 +163,7 @@ ReactSPABundle {
       "rules": Array [
         TypeScriptLoader {
           "value": Object {
-            "loader": "ts",
+            "loader": "ts-loader",
             "options": Object {
               "transpileOnly": false,
             },
@@ -167,7 +172,7 @@ ReactSPABundle {
         },
         FileLoader {
           "value": Object {
-            "loader": "file",
+            "loader": "file-loader",
             "options": Object {
               "name": "[hash].[ext]",
               "outputPath": "assets/",

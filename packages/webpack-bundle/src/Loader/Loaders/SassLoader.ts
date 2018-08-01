@@ -5,8 +5,8 @@ export class SassLoader extends Loader {
         return {
             test: /\.sass/,
             use: [
-                {loader: "css"},
-                {loader: "sass"},
+                {loader: "css-loader"},
+                {loader: "sass-loader"},
             ],
         };
     }

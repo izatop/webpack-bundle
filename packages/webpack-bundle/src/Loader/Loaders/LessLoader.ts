@@ -5,8 +5,8 @@ export class LessLoader extends Loader {
         return {
             test: /\.less$/,
             use: [
-                {loader: "css"},
-                {loader: "less"},
+                {loader: "css-loader"},
+                {loader: "less-loader"},
             ],
         };
     }

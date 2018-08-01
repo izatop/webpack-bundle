@@ -40,7 +40,7 @@ export class ReactSPABundle extends Bundle {
 
         const plugins = [new HtmlWebpackPlugin()];
         if (mode !== "production") {
-            plugins.push(webpack.HotModuleReplacementPlugin);
+            plugins.push(new webpack.HotModuleReplacementPlugin());
             this.set(new Options.DevServer({
                 contentBase: path.join(dirname(context.filename), "dist"),
                 historyApiFallback: true,

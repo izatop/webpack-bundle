@@ -4,7 +4,7 @@ export class FileLoader extends Loader {
     protected getDefaults() {
         return {
             test: /\.(woff(2)?|ttf|eot|svg|jpg|jpeg|png|gif)(\?v=\d+\.\d+\.\d+)?$/,
-            loader: "file",
+            loader: "file-loader",
             options: {
                 name: "[hash].[ext]",
                 outputPath: "assets/",
