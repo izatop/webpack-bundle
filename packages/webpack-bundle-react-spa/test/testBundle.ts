@@ -1,24 +1,13 @@
 import {ReactSPABundle} from "../src";
 
-it("ReactSPABundle should generate valid configuration", () => {
-    const moduleMock: NodeModule = {
-        ...module,
-        filename: "/app/webpack.config.js",
-    };
+it("should bundle for development mode", () => {
+    delete process.env.NODE_ENV;
+    const config = new ReactSPABundle(module);
+    expect(config).toMatchSnapshot();
+});
 
-    const config1 = new ReactSPABundle(moduleMock)
-        .getWebpackConfig();
-
-    expect(config1.mode)
-        .toEqual(process.env.NODE_ENV || "development");
-    expect(config1)
-        .toMatchSnapshot();
-
-    const config2 = new ReactSPABundle(moduleMock, "production")
-        .getWebpackConfig();
-
-    expect(config2.mode)
-        .toEqual("production");
-    expect(config2)
-        .toMatchSnapshot();
+it("should bundle for production mode", () => {
+    process.env.NODE_ENV = "production";
+    const config = new ReactSPABundle(module);
+    expect(config).toMatchSnapshot();
 });

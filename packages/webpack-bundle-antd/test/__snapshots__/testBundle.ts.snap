@@ -1,253 +1,313 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ReactSPABundle should generate valid configuration 1`] = `
-Object {
-  "context": "/app/src",
-  "devServer": Object {
-    "compress": true,
-    "contentBase": "/app/dist",
-    "historyApiFallback": true,
-    "hot": true,
-    "port": 9000,
-  },
-  "entry": "entry",
-  "mode": "test",
-  "module": Object {
-    "rules": Array [
-      Object {
-        "loader": "ts",
-        "options": Object {
-          "getCustomTransformers": [Function],
-          "transpileOnly": true,
-        },
-        "test": /\\\\\\.tsx\\?/,
+exports[`should bundle for development mode 1`] = `
+AntdBundle {
+  "options": Array [
+    Mode {
+      "value": "development",
+    },
+    Context {
+      "value": "<PROJECT_ROOT>/packages/webpack-bundle-antd/test/src",
+    },
+    Entry {
+      "value": "entry",
+    },
+    Resolve {
+      "value": Object {
+        "extensions": Array [
+          ".ts",
+          ".tsx",
+          ".js",
+          ".jsx",
+        ],
+        "modules": Array [
+          "node_modules",
+          "<PROJECT_ROOT>/packages/webpack-bundle-antd/test/src",
+        ],
       },
-      Object {
-        "loader": "file",
-        "options": Object {
-          "name": "[hash].[ext]",
-          "outputPath": "assets/",
-        },
-        "test": /\\\\\\.\\(woff\\(2\\)\\?\\|ttf\\|eot\\|svg\\|jpg\\|jpeg\\|png\\|gif\\)\\(\\\\\\?v=\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\)\\?\\$/,
+    },
+    Output {
+      "value": Object {
+        "chunkFilename": "chunks/[name].js?[hash:6]",
+        "filename": "[name].js?[hash:6]",
+        "path": "<PROJECT_ROOT>/packages/webpack-bundle-antd/test/dist",
+        "publicPath": "/",
       },
-      Object {
-        "test": /\\\\\\.less\\$/,
-        "use": Array [
-          "<PROJECT_ROOT>/node_modules/mini-css-extract-plugin/dist/loader.js",
-          Object {
-            "loader": "css-loader",
-          },
-          Object {
-            "loader": "less-loader",
+    },
+    Module {
+      "rules": Array [
+        TypeScriptCustomLoader {
+          "value": Object {
+            "loader": "ts",
             "options": Object {
-              "javascriptEnabled": true,
+              "getCustomTransformers": [Function],
+              "transpileOnly": true,
+            },
+            "test": /\\\\\\.tsx\\?\\$/,
+          },
+        },
+        FileLoader {
+          "value": Object {
+            "loader": "file",
+            "options": Object {
+              "name": "[hash].[ext]",
+              "outputPath": "assets/",
+            },
+            "test": /\\\\\\.\\(woff\\(2\\)\\?\\|ttf\\|eot\\|svg\\|jpg\\|jpeg\\|png\\|gif\\)\\(\\\\\\?v=\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\)\\?\\$/,
+          },
+        },
+        Loader {
+          "value": Object {
+            "test": /\\\\\\.less\\$/,
+            "use": Array [
+              "<PROJECT_ROOT>/node_modules/mini-css-extract-plugin/dist/loader.js",
+              Object {
+                "loader": "css-loader",
+              },
+              Object {
+                "loader": "less-loader",
+                "options": Object {
+                  "javascriptEnabled": true,
+                },
+              },
+            ],
+          },
+        },
+        Loader {
+          "value": Object {
+            "test": /\\\\\\.css\\$/,
+            "use": Array [
+              "<PROJECT_ROOT>/node_modules/mini-css-extract-plugin/dist/loader.js",
+              Object {
+                "loader": "css-loader",
+              },
+            ],
+          },
+        },
+      ],
+      "value": Object {
+        "rules": Array [],
+      },
+    },
+    ResolveLoader {
+      "value": Object {
+        "modules": Array [
+          "<PROJECT_ROOT>/packages/webpack-bundle-antd/node_modules",
+          "node_modules",
+        ],
+      },
+    },
+    BundleOptimization {
+      "value": Object {
+        "splitChunks": Object {
+          "cacheGroups": Object {
+            "style": Object {
+              "chunks": "all",
+              "enforce": true,
+              "name": "style",
+              "test": /\\\\\\.css\\$/,
+            },
+            "vendor": Object {
+              "chunks": "all",
+              "name": "vendor",
+              "priority": 0,
+              "test": /\\\\/node_modules\\\\//,
             },
           },
-        ],
+        },
       },
-      Object {
-        "test": /\\\\\\.css\\$/,
-        "use": Array [
-          "<PROJECT_ROOT>/node_modules/mini-css-extract-plugin/dist/loader.js",
-          Object {
-            "loader": "css-loader",
+    },
+    DevServer {
+      "value": Object {
+        "compress": true,
+        "contentBase": "<PROJECT_ROOT>/packages/webpack-bundle-antd/test/dist",
+        "historyApiFallback": true,
+        "hot": true,
+        "port": 9000,
+      },
+    },
+    Plugins {
+      "value": Array [
+        MiniCssExtractPlugin {
+          "options": Object {
+            "chunkFilename": "assets/[name].css",
+            "filename": "assets/[name].css",
           },
-        ],
-      },
-    ],
-  },
-  "optimization": Object {
-    "splitChunks": Object {
-      "cacheGroups": Object {
-        "style": Object {
-          "chunks": "all",
-          "enforce": true,
-          "name": "style",
-          "test": /\\\\\\.css\\$/,
         },
-        "vendor": Object {
-          "chunks": "all",
-          "name": "vendor",
-          "priority": 0,
-          "test": /\\\\/node_modules\\\\//,
+        HtmlWebpackPlugin {
+          "options": Object {
+            "cache": true,
+            "chunks": "all",
+            "chunksSortMode": "auto",
+            "compile": true,
+            "excludeChunks": Array [],
+            "favicon": false,
+            "filename": "index.html",
+            "hash": false,
+            "inject": true,
+            "meta": Object {},
+            "minify": false,
+            "showErrors": true,
+            "template": "<PROJECT_ROOT>/node_modules/html-webpack-plugin/default_index.ejs",
+            "templateParameters": [Function],
+            "title": "Webpack App",
+            "xhtml": false,
+          },
         },
-      },
+        [Function],
+      ],
     },
-  },
-  "output": Object {
-    "chunkFilename": "chunks/[name].js?[hash:6]",
-    "filename": "[name].js?[hash:6]",
-    "path": "/app/dist",
-    "publicPath": "/",
-  },
-  "plugins": Array [
-    MiniCssExtractPlugin {
-      "options": Object {
-        "chunkFilename": "assets/[name].css",
-        "filename": "assets/[name].css",
-      },
-    },
-    HtmlWebpackPlugin {
-      "options": Object {
-        "cache": true,
-        "chunks": "all",
-        "chunksSortMode": "auto",
-        "compile": true,
-        "excludeChunks": Array [],
-        "favicon": false,
-        "filename": "index.html",
-        "hash": false,
-        "inject": true,
-        "meta": Object {},
-        "minify": false,
-        "showErrors": true,
-        "template": "<PROJECT_ROOT>/node_modules/html-webpack-plugin/default_index.ejs",
-        "templateParameters": [Function],
-        "title": "Webpack App",
-        "xhtml": false,
-      },
-    },
-    [Function],
   ],
-  "resolve": Object {
-    "extensions": Array [
-      ".ts",
-      ".tsx",
-      ".js",
-      ".jsx",
-    ],
-    "modules": Array [
-      "node_modules",
-      "/app/src",
-    ],
-  },
-  "resolveLoader": Object {
-    "modules": Array [
-      "<PROJECT_ROOT>/packages/webpack-bundle-antd/node_modules",
-      "node_modules",
-    ],
-  },
 }
 `;
 
-exports[`ReactSPABundle should generate valid configuration 2`] = `
-Object {
-  "context": "/app/src",
-  "entry": "entry",
-  "mode": "production",
-  "module": Object {
-    "rules": Array [
-      Object {
-        "loader": "ts",
-        "options": Object {
-          "getCustomTransformers": [Function],
-          "transpileOnly": false,
-        },
-        "test": /\\\\\\.tsx\\?/,
+exports[`should bundle for production mode 1`] = `
+AntdBundle {
+  "options": Array [
+    Mode {
+      "value": "production",
+    },
+    Context {
+      "value": "<PROJECT_ROOT>/packages/webpack-bundle-antd/test/src",
+    },
+    Entry {
+      "value": "entry",
+    },
+    Resolve {
+      "value": Object {
+        "extensions": Array [
+          ".ts",
+          ".tsx",
+          ".js",
+          ".jsx",
+        ],
+        "modules": Array [
+          "node_modules",
+          "<PROJECT_ROOT>/packages/webpack-bundle-antd/test/src",
+        ],
       },
-      Object {
-        "loader": "file",
-        "options": Object {
-          "name": "[hash].[ext]",
-          "outputPath": "assets/",
-        },
-        "test": /\\\\\\.\\(woff\\(2\\)\\?\\|ttf\\|eot\\|svg\\|jpg\\|jpeg\\|png\\|gif\\)\\(\\\\\\?v=\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\)\\?\\$/,
+    },
+    Output {
+      "value": Object {
+        "chunkFilename": "chunks/[name].js?[hash:6]",
+        "filename": "[name].js?[hash:6]",
+        "path": "<PROJECT_ROOT>/packages/webpack-bundle-antd/test/dist",
+        "publicPath": "/",
       },
-      Object {
-        "test": /\\\\\\.less\\$/,
-        "use": Array [
-          "<PROJECT_ROOT>/node_modules/mini-css-extract-plugin/dist/loader.js",
-          Object {
-            "loader": "css-loader",
-          },
-          Object {
-            "loader": "less-loader",
+    },
+    Module {
+      "rules": Array [
+        TypeScriptCustomLoader {
+          "value": Object {
+            "loader": "ts",
             "options": Object {
-              "javascriptEnabled": true,
+              "getCustomTransformers": [Function],
+              "transpileOnly": false,
+            },
+            "test": /\\\\\\.tsx\\?\\$/,
+          },
+        },
+        FileLoader {
+          "value": Object {
+            "loader": "file",
+            "options": Object {
+              "name": "[hash].[ext]",
+              "outputPath": "assets/",
+            },
+            "test": /\\\\\\.\\(woff\\(2\\)\\?\\|ttf\\|eot\\|svg\\|jpg\\|jpeg\\|png\\|gif\\)\\(\\\\\\?v=\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\)\\?\\$/,
+          },
+        },
+        Loader {
+          "value": Object {
+            "test": /\\\\\\.less\\$/,
+            "use": Array [
+              "<PROJECT_ROOT>/node_modules/mini-css-extract-plugin/dist/loader.js",
+              Object {
+                "loader": "css-loader",
+              },
+              Object {
+                "loader": "less-loader",
+                "options": Object {
+                  "javascriptEnabled": true,
+                },
+              },
+            ],
+          },
+        },
+        Loader {
+          "value": Object {
+            "test": /\\\\\\.css\\$/,
+            "use": Array [
+              "<PROJECT_ROOT>/node_modules/mini-css-extract-plugin/dist/loader.js",
+              Object {
+                "loader": "css-loader",
+              },
+            ],
+          },
+        },
+      ],
+      "value": Object {
+        "rules": Array [],
+      },
+    },
+    ResolveLoader {
+      "value": Object {
+        "modules": Array [
+          "<PROJECT_ROOT>/packages/webpack-bundle-antd/node_modules",
+          "node_modules",
+        ],
+      },
+    },
+    BundleOptimization {
+      "value": Object {
+        "splitChunks": Object {
+          "cacheGroups": Object {
+            "style": Object {
+              "chunks": "all",
+              "enforce": true,
+              "name": "style",
+              "test": /\\\\\\.css\\$/,
+            },
+            "vendor": Object {
+              "chunks": "all",
+              "name": "vendor",
+              "priority": 0,
+              "test": /\\\\/node_modules\\\\//,
             },
           },
-        ],
+        },
       },
-      Object {
-        "test": /\\\\\\.css\\$/,
-        "use": Array [
-          "<PROJECT_ROOT>/node_modules/mini-css-extract-plugin/dist/loader.js",
-          Object {
-            "loader": "css-loader",
+    },
+    Plugins {
+      "value": Array [
+        MiniCssExtractPlugin {
+          "options": Object {
+            "chunkFilename": "assets/[name].css",
+            "filename": "assets/[name].css",
           },
-        ],
-      },
-    ],
-  },
-  "optimization": Object {
-    "splitChunks": Object {
-      "cacheGroups": Object {
-        "style": Object {
-          "chunks": "all",
-          "enforce": true,
-          "name": "style",
-          "test": /\\\\\\.css\\$/,
         },
-        "vendor": Object {
-          "chunks": "all",
-          "name": "vendor",
-          "priority": 0,
-          "test": /\\\\/node_modules\\\\//,
+        HtmlWebpackPlugin {
+          "options": Object {
+            "cache": true,
+            "chunks": "all",
+            "chunksSortMode": "auto",
+            "compile": true,
+            "excludeChunks": Array [],
+            "favicon": false,
+            "filename": "index.html",
+            "hash": false,
+            "inject": true,
+            "meta": Object {},
+            "minify": false,
+            "showErrors": true,
+            "template": "<PROJECT_ROOT>/node_modules/html-webpack-plugin/default_index.ejs",
+            "templateParameters": [Function],
+            "title": "Webpack App",
+            "xhtml": false,
+          },
         },
-      },
-    },
-  },
-  "output": Object {
-    "chunkFilename": "chunks/[name].js?[hash:6]",
-    "filename": "[name].js?[hash:6]",
-    "path": "/app/dist",
-    "publicPath": "/",
-  },
-  "plugins": Array [
-    MiniCssExtractPlugin {
-      "options": Object {
-        "chunkFilename": "assets/[name].css",
-        "filename": "assets/[name].css",
-      },
-    },
-    HtmlWebpackPlugin {
-      "options": Object {
-        "cache": true,
-        "chunks": "all",
-        "chunksSortMode": "auto",
-        "compile": true,
-        "excludeChunks": Array [],
-        "favicon": false,
-        "filename": "index.html",
-        "hash": false,
-        "inject": true,
-        "meta": Object {},
-        "minify": false,
-        "showErrors": true,
-        "template": "<PROJECT_ROOT>/node_modules/html-webpack-plugin/default_index.ejs",
-        "templateParameters": [Function],
-        "title": "Webpack App",
-        "xhtml": false,
-      },
+      ],
     },
   ],
-  "resolve": Object {
-    "extensions": Array [
-      ".ts",
-      ".tsx",
-      ".js",
-      ".jsx",
-    ],
-    "modules": Array [
-      "node_modules",
-      "/app/src",
-    ],
-  },
-  "resolveLoader": Object {
-    "modules": Array [
-      "<PROJECT_ROOT>/packages/webpack-bundle-antd/node_modules",
-      "node_modules",
-    ],
-  },
 }
 `;

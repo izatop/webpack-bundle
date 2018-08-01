@@ -6,10 +6,9 @@ import {Bundle, IWebpackValue, Loaders, Options} from "webpack-bundle";
 import {TypeScriptCustomLoader} from "./Loaders/TypeScriptCustomLoader";
 import {BundleOptimization} from "./Optimizations/BundleOptimization";
 
-const DEFAULT_MODE = (process.env.NODE_ENV || "development") as IWebpackValue<"mode">;
-
 export class AntdBundle extends Bundle {
-    constructor(context: NodeModule, mode: IWebpackValue<"mode"> = DEFAULT_MODE) {
+    constructor(context: NodeModule) {
+        const mode = (process.env.NODE_ENV || "development") as IWebpackValue<"mode">;
         super(
             new Options.Mode(mode),
             new Options.Context(join(dirname(context.filename), "src")),

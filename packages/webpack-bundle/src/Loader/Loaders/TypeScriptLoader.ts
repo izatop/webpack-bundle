@@ -4,7 +4,7 @@ export class TypeScriptLoader extends Loader {
     protected getDefaults() {
         return {
             loader: "ts",
-            test: /\.tsx?/,
+            test: /\.tsx?$/,
         };
     }
 }

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Match TypeScriptCustomLoader options 1`] = `
+Object {
+  "before": Array [
+    [Function],
+  ],
+}
+`;
