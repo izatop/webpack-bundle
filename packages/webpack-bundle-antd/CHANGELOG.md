@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.6"></a>
+## [0.6.6](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-antd@0.6.5...webpack-bundle-antd@0.6.6) (2018-08-01)
+
+
+### Bug Fixes
+
+* **webpack:** do not omit -loader suffix ([f944577](https://github.com/izatop/webpack-bundle/commit/f944577))
+
+
+
+
+
 <a name="0.6.5"></a>
 ## [0.6.5](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-antd@0.6.4...webpack-bundle-antd@0.6.5) (2018-08-01)
 
