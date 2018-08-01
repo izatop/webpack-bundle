@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.3"></a>
+## [0.6.3](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.6.2...webpack-bundle-react-spa@0.6.3) (2018-08-01)
+
+
+### Bug Fixes
+
+* **ts:** update tsconfig.json ([bb88efd](https://github.com/izatop/webpack-bundle/commit/bb88efd))
+
+
+
+
+
 <a name="0.6.2"></a>
 ## [0.6.2](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.6.1...webpack-bundle-react-spa@0.6.2) (2018-08-01)
 
