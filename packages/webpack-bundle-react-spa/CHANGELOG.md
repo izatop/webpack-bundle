@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.2"></a>
+## [0.7.2](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.7.1...webpack-bundle-react-spa@0.7.2) (2018-08-07)
+
+
+### Bug Fixes
+
+* **package:** update style-loader to version 0.22.0 ([7179563](https://github.com/izatop/webpack-bundle/commit/7179563))
+
+
+
+
+
 <a name="0.7.1"></a>
 ## [0.7.1](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.7.0...webpack-bundle-react-spa@0.7.1) (2018-08-01)
 
