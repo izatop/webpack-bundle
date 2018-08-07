@@ -28,8 +28,8 @@ ReactSPABundle {
     },
     Output {
       "value": Object {
-        "chunkFilename": "[hash:6]/chunks/[name].js",
-        "filename": "[hash:6]/[name].js",
+        "chunkFilename": "chunks/[name].js?[hash:6]",
+        "filename": "[name].js?[hash:6]",
         "path": "<PROJECT_ROOT>/packages/webpack-bundle-react-spa/test/dist",
         "publicPath": "/",
       },
@@ -43,6 +43,15 @@ ReactSPABundle {
               "transpileOnly": true,
             },
             "test": /\\\\\\.tsx\\?\\$/,
+          },
+        },
+        StyleLoader {
+          "value": Object {
+            "test": /\\\\\\.css\\$/,
+            "use": Array [
+              "style-loader",
+              "css-loader",
+            ],
           },
         },
         FileLoader {
@@ -153,8 +162,8 @@ ReactSPABundle {
     },
     Output {
       "value": Object {
-        "chunkFilename": "[hash:6]/chunks/[name].js",
-        "filename": "[hash:6]/[name].js",
+        "chunkFilename": "chunks/[name].js?[hash:6]",
+        "filename": "[name].js?[hash:6]",
         "path": "<PROJECT_ROOT>/packages/webpack-bundle-react-spa/test/dist",
         "publicPath": "/",
       },
@@ -168,6 +177,15 @@ ReactSPABundle {
               "transpileOnly": false,
             },
             "test": /\\\\\\.tsx\\?\\$/,
+          },
+        },
+        StyleLoader {
+          "value": Object {
+            "test": /\\\\\\.css\\$/,
+            "use": Array [
+              "style-loader",
+              "css-loader",
+            ],
           },
         },
         FileLoader {
