@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.4"></a>
+## [0.7.4](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.7.2...webpack-bundle-react-spa@0.7.4) (2018-08-07)
+
+
+### Bug Fixes
+
+* update deps and test snapshot ([e775179](https://github.com/izatop/webpack-bundle/commit/e775179))
+
+
+
+
+
 <a name="0.7.3"></a>
 ## [0.7.3](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.7.2...webpack-bundle-react-spa@0.7.3) (2018-08-07)
 
