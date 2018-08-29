@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/izatop/webpack-bundle/compare/webpack-bundle@0.6.2...webpack-bundle@0.7.0) (2018-08-29)
+
+
+### Features
+
+* update for deps and Bulma ([63ac56d](https://github.com/izatop/webpack-bundle/commit/63ac56d))
+
+
+
+
+
 <a name="0.6.2"></a>
 ## [0.6.2](https://github.com/izatop/webpack-bundle/compare/webpack-bundle@0.6.1...webpack-bundle@0.6.2) (2018-08-01)
 
