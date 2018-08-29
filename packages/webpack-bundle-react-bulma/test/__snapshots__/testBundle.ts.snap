@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should bundle for development mode 1`] = `
+ReactBulmaBundle {
+  "options": Array [
+    Mode {
+      "value": "development",
+    },
+    Context {
+      "value": "<PROJECT_ROOT>/packages/webpack-bundle-react-bulma/test/src",
+    },
+    Entry {
+      "value": "entry",
+    },
+    Resolve {
+      "value": Object {
+        "extensions": Array [
+          ".ts",
+          ".tsx",
+          ".js",
+          ".jsx",
+        ],
+        "modules": Array [
+          "node_modules",
+          "<PROJECT_ROOT>/packages/webpack-bundle-react-bulma/test/src",
+        ],
+      },
+    },
+    Output {
+      "value": Object {
+        "chunkFilename": "chunks/[name].js?[hash:6]",
+        "filename": "[name].js?[hash:6]",
+        "path": "<PROJECT_ROOT>/packages/webpack-bundle-react-bulma/test/dist",
+        "publicPath": "/",
+      },
+    },
+    Module {
+      "rules": Array [
+        SassLoader {
+          "value": Object {
+            "test": /\\\\\\.\\(css\\|sass\\|scss\\)/,
+            "use": Array [
+              "<PROJECT_ROOT>/node_modules/mini-css-extract-plugin/dist/loader.js",
+              Object {
+                "loader": "css-loader",
+              },
+              Object {
+                "loader": "sass-loader",
+              },
+            ],
+          },
+        },
+        TypeScriptLoader {
+          "value": Object {
+            "loader": "ts-loader",
+            "options": Object {
+              "transpileOnly": true,
+            },
+            "test": /\\\\\\.tsx\\?\\$/,
+          },
+        },
+        FileLoader {
+          "value": Object {
+            "loader": "file-loader",
+            "options": Object {
+              "name": "[hash].[ext]",
+              "outputPath": "assets/",
+            },
+            "test": /\\\\\\.\\(woff\\(2\\)\\?\\|ttf\\|eot\\|svg\\|jpg\\|jpeg\\|png\\|gif\\)\\(\\\\\\?v=\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\)\\?\\$/,
+          },
+        },
+      ],
+      "value": Object {
+        "rules": Array [],
+      },
+    },
+    ResolveLoader {
+      "value": Object {
+        "modules": Array [
+          "<PROJECT_ROOT>/packages/webpack-bundle-react-bulma/node_modules",
+          "node_modules",
+        ],
+      },
+    },
+    BundleOptimization {
+      "value": Object {
+        "splitChunks": Object {
+          "cacheGroups": Object {
+            "vendor": Object {
+              "chunks": "all",
+              "name": "vendor",
+              "priority": 0,
+              "test": /\\\\/node_modules\\\\//,
+            },
+          },
+        },
+      },
+    },
+    DevServer {
+      "value": Object {
+        "compress": true,
+        "contentBase": "<PROJECT_ROOT>/packages/webpack-bundle-react-bulma/test/dist",
+        "historyApiFallback": true,
+        "hot": true,
+        "port": 9000,
+      },
+    },
+    Plugins {
+      "value": Array [
+        HtmlWebpackPlugin {
+          "options": Object {
+            "cache": true,
+            "chunks": "all",
+            "chunksSortMode": "auto",
+            "compile": true,
+            "excludeChunks": Array [],
+            "favicon": false,
+            "filename": "index.html",
+            "hash": false,
+            "inject": true,
+            "meta": Object {},
+            "minify": false,
+            "showErrors": true,
+            "template": "<PROJECT_ROOT>/node_modules/html-webpack-plugin/default_index.ejs",
+            "templateParameters": [Function],
+            "title": "Webpack App",
+            "xhtml": false,
+          },
+        },
+        MiniCssExtractPlugin {
+          "options": Object {
+            "chunkFilename": "assets/[name].css",
+            "filename": "assets/[name].css",
+          },
+        },
+        HotModuleReplacementPlugin {
+          "fullBuildTimeout": 200,
+          "multiStep": undefined,
+          "options": Object {},
+          "requestTimeout": 10000,
+        },
+      ],
+    },
+  ],
+}
+`;
+
+exports[`should bundle for production mode 1`] = `
+ReactBulmaBundle {
+  "options": Array [
+    Mode {
+      "value": "production",
+    },
+    Context {
+      "value": "<PROJECT_ROOT>/packages/webpack-bundle-react-bulma/test/src",
+    },
+    Entry {
+      "value": "entry",
+    },
+    Resolve {
+      "value": Object {
+        "extensions": Array [
+          ".ts",
+          ".tsx",
+          ".js",
+          ".jsx",
+        ],
+        "modules": Array [
+          "node_modules",
+          "<PROJECT_ROOT>/packages/webpack-bundle-react-bulma/test/src",
+        ],
+      },
+    },
+    Output {
+      "value": Object {
+        "chunkFilename": "chunks/[name].js?[hash:6]",
+        "filename": "[name].js?[hash:6]",
+        "path": "<PROJECT_ROOT>/packages/webpack-bundle-react-bulma/test/dist",
+        "publicPath": "/",
+      },
+    },
+    Module {
+      "rules": Array [
+        SassLoader {
+          "value": Object {
+            "test": /\\\\\\.\\(css\\|sass\\|scss\\)/,
+            "use": Array [
+              "<PROJECT_ROOT>/node_modules/mini-css-extract-plugin/dist/loader.js",
+              Object {
+                "loader": "css-loader",
+              },
+              Object {
+                "loader": "sass-loader",
+              },
+            ],
+          },
+        },
+        TypeScriptLoader {
+          "value": Object {
+            "loader": "ts-loader",
+            "options": Object {
+              "transpileOnly": true,
+            },
+            "test": /\\\\\\.tsx\\?\\$/,
+          },
+        },
+        FileLoader {
+          "value": Object {
+            "loader": "file-loader",
+            "options": Object {
+              "name": "[hash].[ext]",
+              "outputPath": "assets/",
+            },
+            "test": /\\\\\\.\\(woff\\(2\\)\\?\\|ttf\\|eot\\|svg\\|jpg\\|jpeg\\|png\\|gif\\)\\(\\\\\\?v=\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\)\\?\\$/,
+          },
+        },
+      ],
+      "value": Object {
+        "rules": Array [],
+      },
+    },
+    ResolveLoader {
+      "value": Object {
+        "modules": Array [
+          "<PROJECT_ROOT>/packages/webpack-bundle-react-bulma/node_modules",
+          "node_modules",
+        ],
+      },
+    },
+    BundleOptimization {
+      "value": Object {
+        "splitChunks": Object {
+          "cacheGroups": Object {
+            "vendor": Object {
+              "chunks": "all",
+              "name": "vendor",
+              "priority": 0,
+              "test": /\\\\/node_modules\\\\//,
+            },
+          },
+        },
+      },
+    },
+    Plugins {
+      "value": Array [
+        HtmlWebpackPlugin {
+          "options": Object {
+            "cache": true,
+            "chunks": "all",
+            "chunksSortMode": "auto",
+            "compile": true,
+            "excludeChunks": Array [],
+            "favicon": false,
+            "filename": "index.html",
+            "hash": false,
+            "inject": true,
+            "meta": Object {},
+            "minify": false,
+            "showErrors": true,
+            "template": "<PROJECT_ROOT>/node_modules/html-webpack-plugin/default_index.ejs",
+            "templateParameters": [Function],
+            "title": "Webpack App",
+            "xhtml": false,
+          },
+        },
+        MiniCssExtractPlugin {
+          "options": Object {
+            "chunkFilename": "assets/[name].css",
+            "filename": "assets/[name].css",
+          },
+        },
+      ],
+    },
+  ],
+}
+`;

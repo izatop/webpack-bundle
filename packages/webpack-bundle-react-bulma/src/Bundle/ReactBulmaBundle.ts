@@ -1,10 +1,11 @@
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import {default as path, dirname, join} from "path";
 import webpack from "webpack";
 import {Bundle, IWebpackValue, Loaders, Options} from "webpack-bundle";
 import {BundleOptimization} from "./Optimizations/BundleOptimization";
 
-export class ReactSPABundle extends Bundle {
+export class ReactBulmaBundle extends Bundle {
     constructor(context: NodeModule) {
         const mode = (process.env.NODE_ENV || "development") as IWebpackValue<"mode">;
         super(
@@ -22,12 +23,15 @@ export class ReactSPABundle extends Bundle {
                 chunkFilename: "chunks/[name].js?[hash:6]",
             }),
             new Options.Module([
-                new Loaders.TypeScriptLoader({
-                    options: {
-                        transpileOnly: !(mode === "production"),
-                    },
+                new Loaders.SassLoader({
+                    test: /\.(css|sass|scss)/,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        {loader: "css-loader"},
+                        {loader: "sass-loader"},
+                    ],
                 }),
-                new Loaders.StyleLoader({}),
+                new Loaders.TypeScriptLoader({options: {transpileOnly: true}}),
                 new Loaders.FileLoader({}),
             ]),
             new Options.ResolveLoader({
@@ -39,9 +43,15 @@ export class ReactSPABundle extends Bundle {
             new BundleOptimization(),
         );
 
-        const plugins = [];
+        const plugins = [
+            new HtmlWebpackPlugin(),
+            new MiniCssExtractPlugin({
+                filename: "assets/[name].css",
+            }) as any,
+        ];
+
         if (mode !== "production") {
-            plugins.push(new webpack.HotModuleReplacementPlugin());
+            plugins.push(new webpack.HotModuleReplacementPlugin() as any);
             this.set(new Options.DevServer({
                 contentBase: path.join(dirname(context.filename), "dist"),
                 historyApiFallback: true,
@@ -51,9 +61,6 @@ export class ReactSPABundle extends Bundle {
             }));
         }
 
-        this.set(new Options.Plugins([
-            new HtmlWebpackPlugin() as any,
-            ...plugins,
-        ]));
+        this.set(new Options.Plugins(plugins));
     }
 }

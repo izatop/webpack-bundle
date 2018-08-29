@@ -2,7 +2,8 @@
     "roots": [
         "<rootDir>/packages/webpack-bundle/test",
         "<rootDir>/packages/webpack-bundle-antd/test",
-        "<rootDir>/packages/webpack-bundle-react-spa/test"
+        "<rootDir>/packages/webpack-bundle-react-spa/test",
+        "<rootDir>/packages/webpack-bundle-react-bulma/test"
     ],
     "snapshotSerializers": [
         "jest-serializer-path"
