@@ -241,6 +241,15 @@ ReactBulmaBundle {
         },
       },
     },
+    DevServer {
+      "value": Object {
+        "compress": true,
+        "contentBase": "<PROJECT_ROOT>/packages/webpack-bundle-react-bulma/test/dist",
+        "historyApiFallback": true,
+        "hot": true,
+        "port": 9000,
+      },
+    },
     Plugins {
       "value": Array [
         HtmlWebpackPlugin {
@@ -268,6 +277,12 @@ ReactBulmaBundle {
             "chunkFilename": "assets/[name].css",
             "filename": "assets/[name].css",
           },
+        },
+        HotModuleReplacementPlugin {
+          "fullBuildTimeout": 200,
+          "multiStep": undefined,
+          "options": Object {},
+          "requestTimeout": 10000,
         },
       ],
     },

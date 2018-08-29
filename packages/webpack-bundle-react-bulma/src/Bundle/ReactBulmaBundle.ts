@@ -51,15 +51,13 @@ export class ReactBulmaBundle extends Bundle {
             new webpack.HotModuleReplacementPlugin(),
         ];
 
-        if (mode !== "production") {
-            this.set(new Options.DevServer({
-                contentBase: path.join(dirname(context.filename), "dist"),
-                historyApiFallback: true,
-                compress: true,
-                port: 9000,
-                hot: true,
-            }));
-        }
+        this.set(new Options.DevServer({
+            contentBase: path.join(dirname(context.filename), "dist"),
+            historyApiFallback: true,
+            compress: true,
+            port: 9000,
+            hot: true,
+        }));
 
         this.set(new Options.Plugins(plugins));
     }

@@ -225,6 +225,15 @@ ReactSPABundle {
         },
       },
     },
+    DevServer {
+      "value": Object {
+        "compress": true,
+        "contentBase": "<PROJECT_ROOT>/packages/webpack-bundle-react-spa/test/dist",
+        "historyApiFallback": true,
+        "hot": true,
+        "port": 9000,
+      },
+    },
     Plugins {
       "value": Array [
         HtmlWebpackPlugin {
@@ -246,6 +255,12 @@ ReactSPABundle {
             "title": "Webpack App",
             "xhtml": false,
           },
+        },
+        HotModuleReplacementPlugin {
+          "fullBuildTimeout": 200,
+          "multiStep": undefined,
+          "options": Object {},
+          "requestTimeout": 10000,
         },
       ],
     },

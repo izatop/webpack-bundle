@@ -128,12 +128,6 @@ AntdBundle {
     },
     Plugins {
       "value": Array [
-        MiniCssExtractPlugin {
-          "options": Object {
-            "chunkFilename": "assets/[name].css",
-            "filename": "assets/[name].css",
-          },
-        },
         HtmlWebpackPlugin {
           "options": Object {
             "cache": true,
@@ -154,7 +148,18 @@ AntdBundle {
             "xhtml": false,
           },
         },
-        [Function],
+        MiniCssExtractPlugin {
+          "options": Object {
+            "chunkFilename": "assets/[name].css",
+            "filename": "assets/[name].css",
+          },
+        },
+        HotModuleReplacementPlugin {
+          "fullBuildTimeout": 200,
+          "multiStep": undefined,
+          "options": Object {},
+          "requestTimeout": 10000,
+        },
       ],
     },
   ],
@@ -278,14 +283,17 @@ AntdBundle {
         },
       },
     },
+    DevServer {
+      "value": Object {
+        "compress": true,
+        "contentBase": "<PROJECT_ROOT>/packages/webpack-bundle-antd/test/dist",
+        "historyApiFallback": true,
+        "hot": true,
+        "port": 9000,
+      },
+    },
     Plugins {
       "value": Array [
-        MiniCssExtractPlugin {
-          "options": Object {
-            "chunkFilename": "assets/[name].css",
-            "filename": "assets/[name].css",
-          },
-        },
         HtmlWebpackPlugin {
           "options": Object {
             "cache": true,
@@ -305,6 +313,18 @@ AntdBundle {
             "title": "Webpack App",
             "xhtml": false,
           },
+        },
+        MiniCssExtractPlugin {
+          "options": Object {
+            "chunkFilename": "assets/[name].css",
+            "filename": "assets/[name].css",
+          },
+        },
+        HotModuleReplacementPlugin {
+          "fullBuildTimeout": 200,
+          "multiStep": undefined,
+          "options": Object {},
+          "requestTimeout": 10000,
         },
       ],
     },
