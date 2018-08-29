@@ -31,8 +31,9 @@ before_script:
 
 script:
   - yarn lint
-  - lerna run ci:build
   - yarn test
+  - lerna run ci:build
+  - git status
   - lerna publish --conventional-commits --yes
 
 after_script:
