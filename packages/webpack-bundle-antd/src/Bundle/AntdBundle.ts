@@ -57,14 +57,14 @@ export class AntdBundle extends Bundle {
         );
 
         const plugins = [
+            new HtmlWebpackPlugin(),
             new MiniCssExtractPlugin({
                 filename: "assets/[name].css",
-            }),
-            new HtmlWebpackPlugin(),
+            }) as any,
+            new webpack.HotModuleReplacementPlugin(),
         ];
 
         if (mode !== "production") {
-            plugins.push(webpack.HotModuleReplacementPlugin);
             this.set(new Options.DevServer({
                 contentBase: path.join(dirname(context.filename), "dist"),
                 historyApiFallback: true,

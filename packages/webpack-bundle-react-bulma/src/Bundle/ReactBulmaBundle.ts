@@ -48,10 +48,10 @@ export class ReactBulmaBundle extends Bundle {
             new MiniCssExtractPlugin({
                 filename: "assets/[name].css",
             }) as any,
+            new webpack.HotModuleReplacementPlugin(),
         ];
 
         if (mode !== "production") {
-            plugins.push(new webpack.HotModuleReplacementPlugin() as any);
             this.set(new Options.DevServer({
                 contentBase: path.join(dirname(context.filename), "dist"),
                 historyApiFallback: true,
