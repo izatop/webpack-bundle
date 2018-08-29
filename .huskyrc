@@ -1,5 +1,5 @@
 {
     "hooks": {
-        "pre-commit": "lerna run lint"
+        "pre-commit": "yarn run lint"
     }
 }
