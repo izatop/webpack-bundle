@@ -30,9 +30,9 @@ before_script:
   - git checkout master
 
 script:
+  - lerna run ci:build
   - yarn lint
   - yarn test
-  - lerna run ci:build
   - git status
   - lerna publish --conventional-commits --yes
 
