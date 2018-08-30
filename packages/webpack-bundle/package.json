@@ -23,13 +23,13 @@
     },
     "dependencies": {
         "@types/webpack": "^4.4.11",
-        "@types/webpack-dev-server": "^2.9.6",
+        "@types/webpack-dev-server": "^3.1.0",
         "webpack": "^4.17.1",
         "webpack-dev-server": "^3.1.7"
     },
     "peerDependencies": {
-        "webpack": "^4.16.2",
-        "webpack-dev-server": "^3.1.5"
+        "webpack": "^4.17.1",
+        "webpack-dev-server": "^3.1.7"
     },
     "license": "MIT",
     "gitHead": "35435df3d4b99b4c781521b49874e7a0f4a2ed18"
