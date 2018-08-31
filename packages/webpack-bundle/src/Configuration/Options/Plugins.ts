@@ -4,6 +4,11 @@ import {ObjectOption} from "../ObjectOption";
 export class Plugins extends ObjectOption<Plugin[]> {
     protected readonly value: Plugin[] = [];
 
+    constructor(value: Plugin[] = []) {
+        super();
+        this.value = value;
+    }
+
     public get key() {
         return "plugins";
     }
@@ -12,10 +17,18 @@ export class Plugins extends ObjectOption<Plugin[]> {
         this.value.push(plugin);
     }
 
+    public get() {
+        return this.value;
+    }
+
     public replace(plugin: Plugin) {
         const index = this.value
             .findIndex((p) => p instanceof plugin.constructor);
 
-        this.value[index] = plugin;
+        if (index > -1) {
+            this.value[index] = plugin;
+        } else {
+            this.value.push(plugin);
+        }
     }
 }
