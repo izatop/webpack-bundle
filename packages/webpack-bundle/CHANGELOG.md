@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.1"></a>
+## [0.8.1](https://github.com/izatop/webpack-bundle/compare/webpack-bundle@0.8.0...webpack-bundle@0.8.1) (2018-08-31)
+
+
+### Bug Fixes
+
+* replace plugin fix ([78578b7](https://github.com/izatop/webpack-bundle/commit/78578b7))
+* tests ([169bd47](https://github.com/izatop/webpack-bundle/commit/169bd47))
+
+
+
+
+
 <a name="0.8.0"></a>
 # [0.8.0](https://github.com/izatop/webpack-bundle/compare/webpack-bundle@0.7.1...webpack-bundle@0.8.0) (2018-08-31)
 
