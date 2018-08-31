@@ -13,6 +13,9 @@ export class Plugins extends ObjectOption<Plugin[]> {
     }
 
     public replace(plugin: Plugin) {
-        this.value.filter((p) => p instanceof plugin.constructor);
+        const index = this.value
+            .findIndex((p) => p instanceof plugin.constructor);
+
+        this.value[index] = plugin;
     }
 }
