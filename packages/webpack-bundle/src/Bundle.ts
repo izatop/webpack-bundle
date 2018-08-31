@@ -12,6 +12,10 @@ export class Bundle {
         this.options.push(...option);
     }
 
+    public get<T extends BundleOption>(type: {new(): T}): T | undefined {
+        return this.options.find((item) => item instanceof type) as T;
+    }
+
     public getWebpackConfig() {
         const config: webpack.Configuration = {};
         for (const option of this.options) {

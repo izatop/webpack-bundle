@@ -11,6 +11,7 @@ const loaders: ILoaderConstructor[] = [
     Loaders.LessLoader,
     Loaders.SassLoader,
     Loaders.StyleLoader,
+    Loaders.HtmlLoader,
 ];
 
 test("Loaders test", () => {

@@ -33,6 +33,7 @@ export class ReactBulmaBundle extends Bundle {
                 }),
                 new Loaders.TypeScriptLoader({options: {transpileOnly: true}}),
                 new Loaders.FileLoader({}),
+                new Loaders.HtmlLoader({}),
             ]),
             new Options.ResolveLoader({
                 modules: [

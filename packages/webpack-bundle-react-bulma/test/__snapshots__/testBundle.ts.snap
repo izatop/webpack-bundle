@@ -69,6 +69,12 @@ ReactBulmaBundle {
             "test": /\\\\\\.\\(woff\\(2\\)\\?\\|ttf\\|eot\\|svg\\|jpg\\|jpeg\\|png\\|gif\\)\\(\\\\\\?v=\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\)\\?\\$/,
           },
         },
+        HtmlLoader {
+          "value": Object {
+            "test": /\\\\\\.html/,
+            "use": "html-loader",
+          },
+        },
       ],
       "value": Object {
         "rules": Array [],
@@ -121,7 +127,7 @@ ReactBulmaBundle {
             "meta": Object {},
             "minify": false,
             "showErrors": true,
-            "template": "<PROJECT_ROOT>/node_modules/html-webpack-plugin/default_index.ejs",
+            "template": undefined,
             "templateParameters": [Function],
             "title": "Webpack App",
             "xhtml": false,
@@ -214,6 +220,12 @@ ReactBulmaBundle {
             "test": /\\\\\\.\\(woff\\(2\\)\\?\\|ttf\\|eot\\|svg\\|jpg\\|jpeg\\|png\\|gif\\)\\(\\\\\\?v=\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\)\\?\\$/,
           },
         },
+        HtmlLoader {
+          "value": Object {
+            "test": /\\\\\\.html/,
+            "use": "html-loader",
+          },
+        },
       ],
       "value": Object {
         "rules": Array [],
@@ -266,7 +278,7 @@ ReactBulmaBundle {
             "meta": Object {},
             "minify": false,
             "showErrors": true,
-            "template": "<PROJECT_ROOT>/node_modules/html-webpack-plugin/default_index.ejs",
+            "template": undefined,
             "templateParameters": [Function],
             "title": "Webpack App",
             "xhtml": false,

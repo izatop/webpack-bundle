@@ -13,9 +13,10 @@ test("Bundle", () => {
     ])
         .addRule(new props.ModuleRule({use: ["loader1", "loader2"]}));
 
+    const entry = new props.Entry("entry.js");
     const config = new Bundle(
         module,
-        new props.Entry("entry.js"),
+        entry,
         new props.Mode("development"),
         new props.Optimization({
             splitChunks: {
@@ -50,4 +51,7 @@ test("Bundle", () => {
                 },
             },
         });
+
+    expect(config.get(props.Entry))
+        .toEqual(entry);
 });
