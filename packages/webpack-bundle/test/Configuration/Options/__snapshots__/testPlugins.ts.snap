@@ -15,8 +15,12 @@ exports[` 2`] = `
 Plugins {
   "value": Array [
     EnvironmentPlugin {
-      "defaultValues": Object {},
-      "keys": Array [],
+      "defaultValues": Object {
+        "foo": 1,
+      },
+      "keys": Array [
+        "foo",
+      ],
     },
   ],
 }
