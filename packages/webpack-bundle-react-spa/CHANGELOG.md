@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.2"></a>
+## [0.8.2](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.8.1...webpack-bundle-react-spa@0.8.2) (2018-08-31)
+
+**Note:** Version bump only for package webpack-bundle-react-spa
+
+
+
+
+
 <a name="0.8.1"></a>
 ## [0.8.1](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.8.0...webpack-bundle-react-spa@0.8.1) (2018-08-30)
 

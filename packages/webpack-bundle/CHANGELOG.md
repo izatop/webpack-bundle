@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/izatop/webpack-bundle/compare/webpack-bundle@0.7.1...webpack-bundle@0.8.0) (2018-08-31)
+
+
+### Features
+
+* Bundhe.get and Plugins.add/replace ([f2fee21](https://github.com/izatop/webpack-bundle/commit/f2fee21))
+
+
+
+
+
 <a name="0.7.1"></a>
 ## [0.7.1](https://github.com/izatop/webpack-bundle/compare/webpack-bundle@0.7.0...webpack-bundle@0.7.1) (2018-08-30)
 

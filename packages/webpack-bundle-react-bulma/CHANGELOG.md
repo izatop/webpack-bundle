@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-bulma@0.8.1...webpack-bundle-react-bulma@0.9.0) (2018-08-31)
+
+
+### Features
+
+* Bundhe.get and Plugins.add/replace ([f2fee21](https://github.com/izatop/webpack-bundle/commit/f2fee21))
+
+
+
+
+
 <a name="0.8.1"></a>
 ## [0.8.1](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-bulma@0.8.0...webpack-bundle-react-bulma@0.8.1) (2018-08-30)
 
