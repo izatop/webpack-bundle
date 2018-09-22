@@ -1,6 +1,6 @@
 {
     "name": "webpack-bundle-react-bulma",
-    "version": "0.9.1",
+    "version": "0.9.2",
     "repository": "https://github.com/izatop/webpack-bundle",
     "author": {
         "name": "Artur Bier",
@@ -39,8 +39,8 @@
     },
     "peerDependencies": {
         "bulma": "^0.7.1",
-        "webpack": "^4.17.1",
-        "webpack-dev-server": "^3.1.7"
+        "webpack": "^4.19.1",
+        "webpack-dev-server": "^3.1.8"
     },
     "license": "MIT",
     "gitHead": "35435df3d4b99b4c781521b49874e7a0f4a2ed18"

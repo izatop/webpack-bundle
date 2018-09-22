@@ -1,6 +1,6 @@
 {
     "name": "webpack-bundle-antd",
-    "version": "0.7.3",
+    "version": "0.7.4",
     "repository": "https://github.com/izatop/webpack-bundle",
     "author": {
         "name": "Artur Bier",
@@ -37,9 +37,9 @@
         "webpack-dev-server": "^3.1.8"
     },
     "peerDependencies": {
-        "antd": "^3.8.4",
-        "webpack": "^4.17.1",
-        "webpack-dev-server": "^3.1.7"
+        "antd": "^3.9.2",
+        "webpack": "^4.19.1",
+        "webpack-dev-server": "^3.1.8"
     },
     "license": "MIT",
     "gitHead": "35435df3d4b99b4c781521b49874e7a0f4a2ed18"
