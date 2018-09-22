@@ -38,6 +38,8 @@ export class ReactBulmaBundle extends Bundle {
             new Options.ResolveLoader({
                 modules: [
                     `${join(__dirname, "../../node_modules")}`,
+                    `${join(__dirname, "../../../node_modules")}`,
+                    `${join(__dirname, "../../../../node_modules")}`,
                     "node_modules",
                 ],
             }),

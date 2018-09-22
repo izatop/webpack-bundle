@@ -84,6 +84,8 @@ ReactBulmaBundle {
       "value": Object {
         "modules": Array [
           "<PROJECT_ROOT>/packages/webpack-bundle-react-bulma/node_modules",
+          "<PROJECT_ROOT>/packages/node_modules",
+          "<PROJECT_ROOT>/node_modules",
           "node_modules",
         ],
       },
@@ -235,6 +237,8 @@ ReactBulmaBundle {
       "value": Object {
         "modules": Array [
           "<PROJECT_ROOT>/packages/webpack-bundle-react-bulma/node_modules",
+          "<PROJECT_ROOT>/packages/node_modules",
+          "<PROJECT_ROOT>/node_modules",
           "node_modules",
         ],
       },
