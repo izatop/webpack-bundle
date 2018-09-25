@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-bulma@0.9.2...webpack-bundle-react-bulma@0.10.0) (2018-09-22)
+
+
+### Bug Fixes
+
+* update peers and fix merge ([35d2b26](https://github.com/izatop/webpack-bundle/commit/35d2b26))
+
+
+### Features
+
+* update dependencies ([2c67d50](https://github.com/izatop/webpack-bundle/commit/2c67d50))
+
+
+
+
+
 <a name="0.9.2"></a>
 ## [0.9.2](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-bulma@0.9.1...webpack-bundle-react-bulma@0.9.2) (2018-08-31)
 
