@@ -15,6 +15,7 @@ export class Plugins extends ObjectOption<Plugin[]> {
 
     public add(plugin: Plugin) {
         this.value.push(plugin);
+        return this;
     }
 
     public get() {
@@ -30,5 +31,7 @@ export class Plugins extends ObjectOption<Plugin[]> {
         } else {
             this.value.push(plugin);
         }
+
+        return this;
     }
 }
