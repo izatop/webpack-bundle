@@ -25,7 +25,7 @@
         "@types/webpack": "^4.4.20",
         "@types/webpack-dev-server": "^3.1.1",
         "html-loader": "^0.5.5",
-        "webpack": "^4.27.0",
+        "webpack": "^4.27.1",
         "webpack-dev-server": "^3.1.10"
     },
     "license": "MIT",
