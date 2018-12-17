@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.7](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.9.6...webpack-bundle-react-spa@0.9.7) (2018-12-17)
+
+
+### Bug Fixes
+
+* **package:** update css-loader to version 2.0.0 ([02c4283](https://github.com/izatop/webpack-bundle/commit/02c4283))
+* update deps ([648a74a](https://github.com/izatop/webpack-bundle/commit/648a74a))
+
+
+
+
+
 ## [0.9.6](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.9.5...webpack-bundle-react-spa@0.9.6) (2018-12-07)
 
 **Note:** Version bump only for package webpack-bundle-react-spa

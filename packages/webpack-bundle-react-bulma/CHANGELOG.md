@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.7](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-bulma@0.10.6...webpack-bundle-react-bulma@0.10.7) (2018-12-17)
+
+
+### Bug Fixes
+
+* update deps ([648a74a](https://github.com/izatop/webpack-bundle/commit/648a74a))
+
+
+
+
+
 ## [0.10.6](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-bulma@0.10.5...webpack-bundle-react-bulma@0.10.6) (2018-12-07)
 
 **Note:** Version bump only for package webpack-bundle-react-bulma
