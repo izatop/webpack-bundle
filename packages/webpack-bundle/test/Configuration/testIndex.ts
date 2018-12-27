@@ -2,9 +2,7 @@ import {ObjectOption, Option} from "../../src";
 import * as options from "../../src/Configuration";
 
 test("Configuration Test", () => {
-    interface IBranch {
-        new(...args: any[]): Option<any> | ObjectOption<any>;
-    }
+    type IBranch = new(...args: any[]) => Option<any> | ObjectOption<any>;
 
     const branches: IBranch[] = [
         options.AMD,

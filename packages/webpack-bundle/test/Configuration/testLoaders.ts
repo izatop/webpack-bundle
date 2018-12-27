@@ -1,8 +1,6 @@
 import * as Loaders from "../../src/Loader";
 
-interface ILoaderConstructor {
-    new(...args: any[]): Loaders.Loader;
-}
+type ILoaderConstructor = new(...args: any[]) => Loaders.Loader;
 
 const loaders: ILoaderConstructor[] = [
     Loaders.TypeScriptLoader,

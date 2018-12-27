@@ -22,11 +22,11 @@
         "build:watch": "yarn build --watch"
     },
     "dependencies": {
-        "@types/webpack": "^4.4.21",
+        "@types/webpack": "^4.4.22",
         "@types/webpack-dev-server": "^3.1.1",
         "html-loader": "^0.5.5",
-        "webpack": "^4.27.1",
-        "webpack-dev-server": "^3.1.10"
+        "webpack": "^4.28.2",
+        "webpack-dev-server": "^3.1.14"
     },
     "license": "MIT",
     "gitHead": "35435df3d4b99b4c781521b49874e7a0f4a2ed18"
