@@ -1,4 +1,4 @@
-import webpack from "webpack";
+import * as webpack from "webpack";
 import {ObjectOption} from "../ObjectOption";
 
 export class Optimization extends ObjectOption<webpack.Options.Optimization> {
