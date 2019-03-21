@@ -22,7 +22,7 @@
         "build:watch": "yarn build --watch"
     },
     "dependencies": {
-        "@types/webpack": "^4.4.24",
+        "@types/webpack": "^4.4.26",
         "@types/webpack-dev-server": "^3.1.1",
         "webpack": "^4.29.0",
         "webpack-dev-server": "^3.1.14"
