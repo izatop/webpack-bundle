@@ -1,3 +1,4 @@
 import {ScalarOption} from "../ScalarOption";
 
-export class Entry extends ScalarOption<"entry"> {}
+export class Entry extends ScalarOption<"entry"> {
+}

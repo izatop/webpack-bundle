@@ -1,3 +1,4 @@
 import {ScalarOption} from "../ScalarOption";
 
-export class Externals extends ScalarOption<"externals"> {}
+export class Externals extends ScalarOption<"externals"> {
+}

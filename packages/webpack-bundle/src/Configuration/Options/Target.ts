@@ -1,3 +1,4 @@
 import {ScalarOption} from "../ScalarOption";
 
-export class Target extends ScalarOption<"target"> {}
+export class Target extends ScalarOption<"target"> {
+}

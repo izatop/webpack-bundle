@@ -1,3 +1,4 @@
 import {ScalarOption} from "../ScalarOption";
 
-export class RecordsPath extends ScalarOption<"recordsPath"> {}
+export class RecordsPath extends ScalarOption<"recordsPath"> {
+}

@@ -3,7 +3,9 @@
         "module": "commonjs",
         "target": "es2017",
         "declaration": true,
-        "lib": ["esnext"],
+        "lib": [
+            "esnext"
+        ],
         "esModuleInterop": true,
         "sourceMap": true,
         "strict": true,

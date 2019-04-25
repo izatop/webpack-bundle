@@ -3,7 +3,9 @@
         "module": "commonjs",
         "target": "es2017",
         "declaration": true,
-        "lib": ["esnext"],
+        "lib": [
+            "esnext"
+        ],
         "rootDir": "src",
         "outDir": "dist",
         "esModuleInterop": true,
@@ -17,5 +19,7 @@
         "strictFunctionTypes": true,
         "experimentalDecorators": true
     },
-    "include": ["src"]
+    "include": [
+        "src"
+    ]
 }
