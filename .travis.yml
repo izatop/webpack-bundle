@@ -9,7 +9,6 @@ notifications:
   email: false
 
 node_js:
-  - "11"
   - "12"
 
 before_install:
