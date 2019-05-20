@@ -32,10 +32,10 @@
         "less-loader": "^5.0.0",
         "mini-css-extract-plugin": "^0.6.0",
         "ts-import-plugin": "^1.5.5",
-        "ts-loader": "^6.0.0",
-        "webpack": "^4.31.0",
+        "ts-loader": "^6.0.1",
+        "webpack": "^4.32.0",
         "webpack-bundle": "^0.9.16",
-        "webpack-dev-server": "^3.3.1"
+        "webpack-dev-server": "^3.4.1"
     },
     "license": "MIT",
     "gitHead": "35435df3d4b99b4c781521b49874e7a0f4a2ed18"
