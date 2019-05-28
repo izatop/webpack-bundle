@@ -152,6 +152,7 @@ AntdBundle {
           "options": Object {
             "chunkFilename": "assets/[name].css",
             "filename": "assets/[name].css",
+            "moduleFilename": [Function],
           },
         },
         HotModuleReplacementPlugin {
@@ -318,6 +319,7 @@ AntdBundle {
           "options": Object {
             "chunkFilename": "assets/[name].css",
             "filename": "assets/[name].css",
+            "moduleFilename": [Function],
           },
         },
         HotModuleReplacementPlugin {
