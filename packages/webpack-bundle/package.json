@@ -25,7 +25,7 @@
         "@types/webpack": "^4.4.32",
         "@types/webpack-dev-server": "^3.1.6",
         "webpack": "^4.32.2",
-        "webpack-dev-server": "^3.4.1"
+        "webpack-dev-server": "^3.5.1"
     },
     "license": "MIT",
     "gitHead": "35435df3d4b99b4c781521b49874e7a0f4a2ed18"
