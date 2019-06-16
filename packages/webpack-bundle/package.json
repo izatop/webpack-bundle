@@ -24,8 +24,8 @@
     "dependencies": {
         "@types/webpack": "^4.4.32",
         "@types/webpack-dev-server": "^3.1.6",
-        "webpack": "^4.33.0",
-        "webpack-dev-server": "^3.5.1"
+        "webpack": "^4.34.0",
+        "webpack-dev-server": "^3.7.1"
     },
     "license": "MIT",
     "gitHead": "35435df3d4b99b4c781521b49874e7a0f4a2ed18"
