@@ -1,6 +1,6 @@
 {
     "name": "webpack-bundle-antd",
-    "version": "0.8.22",
+    "version": "0.8.23",
     "repository": "https://github.com/izatop/webpack-bundle",
     "author": {
         "name": "Artur Bier",
@@ -34,7 +34,7 @@
         "ts-import-plugin": "^1.6.1",
         "ts-loader": "^6.0.4",
         "webpack": "^4.35.0",
-        "webpack-bundle": "^0.9.22",
+        "webpack-bundle": "^0.9.23",
         "webpack-dev-server": "^3.7.2"
     },
     "license": "MIT",
