@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.26](https://github.com/izatop/webpack-bundle/compare/webpack-bundle@0.9.25...webpack-bundle@0.9.26) (2019-07-08)
+
+**Note:** Version bump only for package webpack-bundle
+
+
+
+
+
 ## [0.9.25](https://github.com/izatop/webpack-bundle/compare/webpack-bundle@0.9.24...webpack-bundle@0.9.25) (2019-07-01)
 
 
