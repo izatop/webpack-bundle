@@ -152,6 +152,7 @@ AntdBundle {
           "options": Object {
             "chunkFilename": "assets/[name].css",
             "filename": "assets/[name].css",
+            "ignoreOrder": false,
             "moduleFilename": [Function],
           },
         },
@@ -319,6 +320,7 @@ AntdBundle {
           "options": Object {
             "chunkFilename": "assets/[name].css",
             "filename": "assets/[name].css",
+            "ignoreOrder": false,
             "moduleFilename": [Function],
           },
         },
