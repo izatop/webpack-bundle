@@ -33,7 +33,7 @@
         "mini-css-extract-plugin": "^0.8.0",
         "ts-import-plugin": "^1.6.1",
         "ts-loader": "^6.0.4",
-        "webpack": "^4.38.0",
+        "webpack": "^4.39.1",
         "webpack-bundle": "^0.9.29",
         "webpack-dev-server": "^3.7.2"
     },
