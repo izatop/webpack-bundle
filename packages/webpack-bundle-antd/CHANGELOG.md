@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.32](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-antd@0.8.31...webpack-bundle-antd@0.8.32) (2019-08-19)
+
+
+### Bug Fixes
+
+* update deps ([93f3707](https://github.com/izatop/webpack-bundle/commit/93f3707))
+
+
+
+
+
 ## [0.8.31](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-antd@0.8.30...webpack-bundle-antd@0.8.31) (2019-08-18)
 
 
