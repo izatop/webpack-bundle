@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.39](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-antd@0.8.38...webpack-bundle-antd@0.8.39) (2019-11-25)
+
+
+### Bug Fixes
+
+* **package:** update file-loader to version 5.0.0 ([a3985e1](https://github.com/izatop/webpack-bundle/commit/a3985e1af23d54201d49b5e93f004a3e05f56e9a))
+
+
+
+
+
 ## [0.8.38](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-antd@0.8.37...webpack-bundle-antd@0.8.38) (2019-11-18)
 
 

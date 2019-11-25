@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.39](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.9.38...webpack-bundle-react-spa@0.9.39) (2019-11-25)
+
+
+### Bug Fixes
+
+* **package:** update file-loader to version 5.0.0 ([eec375b](https://github.com/izatop/webpack-bundle/commit/eec375b976bcc20725e1e4acd0b7bd281add97df))
+
+
+
+
+
 ## [0.9.38](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.9.37...webpack-bundle-react-spa@0.9.38) (2019-11-18)
 
 
