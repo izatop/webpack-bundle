@@ -23,19 +23,19 @@
     },
     "dependencies": {
         "@types/html-webpack-plugin": "^3.2.1",
-        "@types/mini-css-extract-plugin": "^0.8.0",
+        "@types/mini-css-extract-plugin": "^0.9.0",
         "@types/webpack": "^4.41.0",
         "@types/webpack-dev-server": "^3.9.0",
         "file-loader": "^5.0.0",
         "html-webpack-plugin": "^3.2.0",
         "less": "^3.10.3",
         "less-loader": "^5.0.0",
-        "mini-css-extract-plugin": "^0.8.0",
+        "mini-css-extract-plugin": "^0.9.0",
         "ts-import-plugin": "^1.6.2",
         "ts-loader": "^6.2.1",
-        "webpack": "^4.41.2",
+        "webpack": "^4.41.4",
         "webpack-bundle": "^0.9.39",
-        "webpack-dev-server": "^3.9.0"
+        "webpack-dev-server": "^3.10.1"
     },
     "license": "MIT",
     "gitHead": "35435df3d4b99b4c781521b49874e7a0f4a2ed18"

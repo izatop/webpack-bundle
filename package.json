@@ -25,7 +25,7 @@
         "test:snapshot": "jest --config jest.json --updateSnapshot"
     },
     "devDependencies": {
-        "@types/jest": "^24.0.23",
+        "@types/jest": "^24.0.24",
         "coveralls": "^3.0.9",
         "husky": "^3.1.0",
         "jest": "^24.9.0",
@@ -34,7 +34,7 @@
         "rimraf": "^3.0.0",
         "ts-jest": "^24.1.0",
         "tslint": "^5.20.1",
-        "typescript": "^3.7.3"
+        "typescript": "^3.7.4"
     },
     "license": "MIT"
 }
