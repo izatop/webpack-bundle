@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.42](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.9.41...webpack-bundle-react-spa@0.9.42) (2019-12-23)
+
+
+### Bug Fixes
+
+* update deps ([ee5f5ff](https://github.com/izatop/webpack-bundle/commit/ee5f5ff4cd6800ea5043699b9f563392fca4575d))
+
+
+
+
+
 ## [0.9.41](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.9.40...webpack-bundle-react-spa@0.9.41) (2019-12-11)
 
 
