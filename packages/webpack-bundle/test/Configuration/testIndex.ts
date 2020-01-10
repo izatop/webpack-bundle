@@ -9,7 +9,6 @@ test("Configuration Test", () => {
         options.Bail,
         options.Cache,
         options.Context,
-        options.Debug,
         options.DevTool,
         options.DevServer,
         options.Entry,
