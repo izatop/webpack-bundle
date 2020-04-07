@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.44](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.9.43...webpack-bundle-react-spa@0.9.44) (2020-04-07)
+
+
+### Bug Fixes
+
+* update deps ([aca10de](https://github.com/izatop/webpack-bundle/commit/aca10de6550393fb18b041bffdca9924ae3ea81b))
+* **package:** update html-webpack-plugin to version 4.0.0 ([c300fdd](https://github.com/izatop/webpack-bundle/commit/c300fddee9cd0a87dcee4a6c881f1abf1eef963c))
+* update deps ([ec4b0ac](https://github.com/izatop/webpack-bundle/commit/ec4b0ac75a9ae843e80f44f47403bb656384d345))
+* **package:** update file-loader to version 6.0.0 ([b9aef1e](https://github.com/izatop/webpack-bundle/commit/b9aef1ee1f1d2c29824bb9f580604315d96bf216))
+
+
+
+
+
 ## [0.9.43](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-react-spa@0.9.42...webpack-bundle-react-spa@0.9.43) (2020-01-10)
 
 

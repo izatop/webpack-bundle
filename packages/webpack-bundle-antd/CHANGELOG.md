@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.44](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-antd@0.8.43...webpack-bundle-antd@0.8.44) (2020-04-07)
+
+
+### Bug Fixes
+
+* update deps ([aca10de](https://github.com/izatop/webpack-bundle/commit/aca10de6550393fb18b041bffdca9924ae3ea81b))
+* **package:** update html-webpack-plugin to version 4.0.0 ([2f03f76](https://github.com/izatop/webpack-bundle/commit/2f03f7688d0c280093026a6b6e7a678395ce2a55))
+* update deps ([ec4b0ac](https://github.com/izatop/webpack-bundle/commit/ec4b0ac75a9ae843e80f44f47403bb656384d345))
+* **package:** update file-loader to version 6.0.0 ([6698d77](https://github.com/izatop/webpack-bundle/commit/6698d77ccc3427586b53bf2bb9029ce84cdb2464))
+
+
+
+
+
 ## [0.8.43](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-antd@0.8.42...webpack-bundle-antd@0.8.43) (2020-01-10)
 
 
