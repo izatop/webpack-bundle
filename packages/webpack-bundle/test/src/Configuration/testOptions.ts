@@ -1,4 +1,4 @@
-import {AMD, Mode} from "../../src/Configuration";
+import {AMD, Mode} from "../../../src/Configuration";
 import {BundleOptionMock} from "../mock/BundleOptionMock";
 
 test("BundleOption Mock Test", () => {

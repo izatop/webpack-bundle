@@ -1,5 +1,5 @@
-import {Bundle, Loaders} from "../../src";
-import * as props from "../../src/Configuration/index";
+import {Bundle, Loaders} from "../../../src";
+import * as props from "../../../src/Configuration";
 
 test("Bundle", () => {
     const module = new props.Module([

@@ -1,4 +1,4 @@
-import {BundleOption} from "../../src/Configuration/BundleOption";
+import {BundleOption} from "../../../src";
 
 export class BundleOptionMock<T = string> extends BundleOption<T> {
 }

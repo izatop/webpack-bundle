@@ -1,5 +1,5 @@
 import {dirname} from "path";
-import {Context} from "../../src/Configuration";
+import {Context} from "../../../src/Configuration";
 
 test("Context Test", () => {
     expect(new Context(module).getValue())

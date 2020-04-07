@@ -1,5 +1,5 @@
-import {ObjectOption, Option} from "../../src";
-import * as options from "../../src/Configuration";
+import {ObjectOption, Option} from "../../../src";
+import * as options from "../../../src/Configuration";
 
 test("Configuration Test", () => {
     type IBranch = new(...args: any[]) => Option<any> | ObjectOption<any>;

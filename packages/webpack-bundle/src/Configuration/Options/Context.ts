@@ -6,12 +6,11 @@ export class Context extends ScalarOption<"context"> {
     protected readonly value?: IWebpackValue<"context">;
 
     constructor(value?: NodeModule | IWebpackValue<"context">) {
-        super();
-        this.value = this.getContextFrom(value);
+        super(Context.getContextFrom(value));
     }
 
-    protected getContextFrom(value: IWebpackValue<"context"> | NodeJS.Module) {
-        if (!value || typeof value === "string") {
+    protected static getContextFrom(value: IWebpackValue<"context"> | NodeModule): string | undefined {
+        if (typeof value === "string" || typeof value === "undefined") {
             return value;
         }
 

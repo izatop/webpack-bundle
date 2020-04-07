@@ -1,4 +1,4 @@
-import * as Loaders from "../../src/Loader";
+import * as Loaders from "../../../src/Loader";
 
 type ILoaderConstructor = new(...args: any[]) => Loaders.Loader;
 
