@@ -1,6 +1,6 @@
 {
     "name": "webpack-bundle-react-spa",
-    "version": "0.9.44",
+    "version": "0.9.45",
     "repository": "https://github.com/izatop/webpack-bundle",
     "author": {
         "name": "Artur Bier",
@@ -31,7 +31,7 @@
         "style-loader": "^1.1.4",
         "ts-loader": "^7.0.1",
         "webpack": "^4.43.0",
-        "webpack-bundle": "^0.9.42",
+        "webpack-bundle": "^0.9.43",
         "webpack-dev-server": "^3.10.3"
     },
     "license": "MIT",
