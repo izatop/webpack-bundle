@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.47](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-antd@0.8.46...webpack-bundle-antd@0.8.47) (2020-05-27)
+
+
+### Bug Fixes
+
+* graphql loader, update deps ([d6b900c](https://github.com/izatop/webpack-bundle/commit/d6b900c3d6e32375ea114a72edae72ec22baf05e))
+
+
+
+
+
 ## [0.8.46](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-antd@0.8.45...webpack-bundle-antd@0.8.46) (2020-04-30)
 
 

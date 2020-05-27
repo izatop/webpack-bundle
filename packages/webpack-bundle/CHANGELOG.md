@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.44](https://github.com/izatop/webpack-bundle/compare/webpack-bundle@0.9.43...webpack-bundle@0.9.44) (2020-05-27)
+
+
+### Bug Fixes
+
+* graphql loader, update deps ([d6b900c](https://github.com/izatop/webpack-bundle/commit/d6b900c3d6e32375ea114a72edae72ec22baf05e))
+
+
+
+
+
 ## [0.9.43](https://github.com/izatop/webpack-bundle/compare/webpack-bundle@0.9.42...webpack-bundle@0.9.43) (2020-04-22)
 
 
