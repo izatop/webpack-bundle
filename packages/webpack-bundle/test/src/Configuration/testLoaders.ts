@@ -10,6 +10,7 @@ const loaders: ILoaderConstructor[] = [
     Loaders.SassLoader,
     Loaders.StyleLoader,
     Loaders.HtmlLoader,
+    Loaders.GraphQLLoader,
 ];
 
 test("Loaders test", () => {
