@@ -1658,10 +1658,10 @@
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
 
-"@types/webpack@^4.41.13":
-  version "4.41.13"
-  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.41.13.tgz#988d114c8913d039b8a0e0502a7fe4f1f84f3d5e"
-  integrity sha512-RYmIHOWSxnTTa765N6jJBVE45pd2SYNblEYshVDduLw6RhocazNmRzE5/ytvBD8IkDMH6DI+bcrqxh8NILimBA==
+"@types/webpack@^4.41.17":
+  version "4.41.17"
+  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.41.17.tgz#0a69005e644d657c85b7d6ec1c826a71bebd1c93"
+  integrity sha512-6FfeCidTSHozwKI67gIVQQ5Mp0g4X96c2IXxX75hYEQJwST/i6NyZexP//zzMOBb+wG9jJ7oO8fk9yObP2HWAw==
   dependencies:
     "@types/anymatch" "*"
     "@types/node" "*"
@@ -5921,6 +5921,23 @@ less@^3.11.1:
     request "^2.83.0"
     source-map "~0.6.0"
 
+less@^3.11.2:
+  version "3.11.2"
+  resolved "https://registry.yarnpkg.com/less/-/less-3.11.2.tgz#51a484e9017287f5ac3db921cb86970eb7506e81"
+  integrity sha512-ed8Lir98Tu6a+LeU7+8ShpRLSUdk//lWf1sh+5w7tNju4wGItztqDHp03Z+a2o1nzU6pObVxw1n4Gu7VzQYusQ==
+  dependencies:
+    clone "^2.1.2"
+    tslib "^1.10.0"
+  optionalDependencies:
+    errno "^0.1.1"
+    graceful-fs "^4.1.2"
+    image-size "~0.5.0"
+    make-dir "^2.1.0"
+    mime "^1.4.1"
+    promise "^7.1.1"
+    request "^2.83.0"
+    source-map "~0.6.0"
+
 leven@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/leven/-/leven-3.1.0.tgz#77891de834064cccba82ae7842bb6b14a13ed7f2"
@@ -9031,10 +9048,10 @@ ts-import-plugin@^1.6.6:
   dependencies:
     tslib "^1.11.1"
 
-ts-jest@^26.0.0:
-  version "26.0.0"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.0.0.tgz#957b802978249aaf74180b9dcb17b4fd787ad6f3"
-  integrity sha512-eBpWH65mGgzobuw7UZy+uPP9lwu+tPp60o324ASRX4Ijg8UC5dl2zcge4kkmqr2Zeuk9FwIjvCTOPuNMEyGWWw==
+ts-jest@^26.1.0:
+  version "26.1.0"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.1.0.tgz#e9070fc97b3ea5557a48b67c631c74eb35e15417"
+  integrity sha512-JbhQdyDMYN5nfKXaAwCIyaWLGwevcT2/dbqRPsQeh6NZPUuXjZQZEfeLb75tz0ubCIgEELNm6xAzTe5NXs5Y4Q==
   dependencies:
     bs-logger "0.x"
     buffer-from "1.x"
