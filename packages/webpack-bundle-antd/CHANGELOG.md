@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.50](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-antd@0.8.49...webpack-bundle-antd@0.8.50) (2020-07-20)
+
+
+### Bug Fixes
+
+* option names ([475f7c5](https://github.com/izatop/webpack-bundle/commit/475f7c5ea7866fc902e74149943b7c817743d959))
+
+
+
+
+
 ## [0.8.49](https://github.com/izatop/webpack-bundle/compare/webpack-bundle-antd@0.8.48...webpack-bundle-antd@0.8.49) (2020-06-22)
 
 
