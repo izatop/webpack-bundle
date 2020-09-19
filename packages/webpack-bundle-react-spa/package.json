@@ -29,8 +29,8 @@
         "file-loader": "^6.1.0",
         "html-webpack-plugin": "^4.4.1",
         "style-loader": "^1.2.1",
-        "ts-loader": "^8.0.3",
-        "webpack": "^4.44.1",
+        "ts-loader": "^8.0.4",
+        "webpack": "^4.44.2",
         "webpack-bundle": "^0.9.49",
         "webpack-dev-server": "^3.11.0"
     },
