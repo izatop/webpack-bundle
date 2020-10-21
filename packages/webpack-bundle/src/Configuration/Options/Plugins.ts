@@ -1,5 +1,8 @@
-import {Plugin} from "webpack";
+import {Compiler, WebpackPluginInstance} from "webpack";
 import {ObjectOption} from "../ObjectOption";
+
+export type Plugin = ((this: Compiler, compiler: Compiler) => void)
+    | WebpackPluginInstance;
 
 export class Plugins extends ObjectOption<Plugin[]> {
     protected readonly value: Plugin[] = [];

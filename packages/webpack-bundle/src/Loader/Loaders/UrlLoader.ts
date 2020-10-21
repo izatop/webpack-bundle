@@ -5,6 +5,7 @@ export class FileLoader extends Loader {
         return {
             test: /\.(woff(2)?|ttf|eot|svg|jpg|jpeg|png|gif)(\?v=\d+\.\d+\.\d+)?$/,
             loader: "url-loader",
+            type: "asset/resource",
             options: {
                 name: "[hash].[ext]",
                 outputPath: "assets/",

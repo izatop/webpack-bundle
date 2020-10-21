@@ -10,7 +10,6 @@ test("Configuration Test", () => {
         options.Cache,
         options.Context,
         options.DevTool,
-        options.DevServer,
         options.Entry,
         options.Externals,
         options.Mode,

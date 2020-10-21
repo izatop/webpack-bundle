@@ -2,10 +2,10 @@ import * as webpack from "webpack";
 import {ObjectOption} from "../ObjectOption";
 import {ModuleRule} from "./ModuleRule";
 
-export class Module extends ObjectOption<webpack.Module> {
-    protected readonly value: webpack.Module;
+export class Module extends ObjectOption<webpack.ModuleOptions> {
+    protected readonly value: webpack.ModuleOptions;
 
-    constructor(protected rules: ModuleRule[] = [], value?: webpack.Module) {
+    constructor(protected rules: ModuleRule[] = [], value?: webpack.ModuleOptions) {
         super({rules: []});
         this.value = {
             rules: [],
@@ -23,9 +23,12 @@ export class Module extends ObjectOption<webpack.Module> {
     }
 
     public serialize() {
-        const module: webpack.Module = {
+        const module: webpack.ModuleOptions = {
             ...this.value,
-            rules: [...this.rules.map((rule) => rule.serialize()), ...this.value.rules],
+            rules: [
+                ...this.rules.map((rule) => rule.serialize()),
+                ...this.value.rules as (webpack.RuleSetRule | "...")[],
+            ],
         };
 
         return {
