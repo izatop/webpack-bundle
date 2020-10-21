@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.53](https://github.com/izatop/webpack-bundle/compare/webpack-bundle@0.9.52...webpack-bundle@0.9.53) (2020-10-21)
+
+
+### Bug Fixes
+
+* drop loader type ([d7aacd5](https://github.com/izatop/webpack-bundle/commit/d7aacd501bbca3c4a28bf4a0cafe9e131bcdcd59))
+
+
+
+
+
 ## [0.9.52](https://github.com/izatop/webpack-bundle/compare/webpack-bundle@0.9.51...webpack-bundle@0.9.52) (2020-10-21)
 
 
