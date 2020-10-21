@@ -6,7 +6,6 @@ export class GraphQLLoader extends Loader {
             test: /\.(graphql|gql)$/,
             exclude: /node_modules/,
             loader: "graphql-tag/loader",
-            type: "asset/resource"
         };
     }
 }

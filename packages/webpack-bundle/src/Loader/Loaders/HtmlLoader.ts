@@ -4,7 +4,6 @@ export class HtmlLoader extends Loader {
     protected getDefaults() {
         return {
             test: /\.html/,
-            type: "asset/resource",
         };
     }
 }
