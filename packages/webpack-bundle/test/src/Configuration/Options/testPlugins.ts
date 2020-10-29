@@ -5,7 +5,7 @@ test("", () => {
     const plugins = new Plugins([]);
     const p1 = new webpack.EnvironmentPlugin({});
     const p2 = new webpack.EnvironmentPlugin({foo: 1});
-    const p3 = new webpack.IgnorePlugin(/.txt/);
+    const p3 = new webpack.IgnorePlugin({resourceRegExp: /.txt/});
 
     plugins.add(p1);
     expect(plugins.get()).toEqual([p1]);
