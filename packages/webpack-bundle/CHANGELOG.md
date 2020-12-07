@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.57](https://github.com/izatop/webpack-bundle/compare/webpack-bundle@0.9.56...webpack-bundle@0.9.57) (2020-12-07)
+
+
+### Bug Fixes
+
+* update deps ([d1748df](https://github.com/izatop/webpack-bundle/commit/d1748dfdd42c4c66f152e211029044e78e5b9186))
+
+
+
+
+
 ## [0.9.56](https://github.com/izatop/webpack-bundle/compare/webpack-bundle@0.9.55...webpack-bundle@0.9.56) (2020-11-19)
 
 
