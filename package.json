@@ -26,7 +26,7 @@
         "watch": "yarn workspace webpack-bundle build:watch"
     },
     "devDependencies": {
-        "@types/jest": "^26.0.15",
+        "@types/jest": "^26.0.16",
         "coveralls": "^3.1.0",
         "husky": "^4.3.0",
         "jest": "^26.6.3",
@@ -35,7 +35,7 @@
         "rimraf": "^3.0.2",
         "ts-jest": "^26.4.4",
         "tslint": "^6.1.3",
-        "typescript": "^4.0.5"
+        "typescript": "^4.1.2"
     },
     "license": "MIT"
 }
