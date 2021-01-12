@@ -5,3 +5,4 @@ coverage/
 yarn-*.log
 lerna-*.log
 npm-*.log
+.DS_Store
