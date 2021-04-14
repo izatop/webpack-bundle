@@ -1,6 +1,6 @@
 {
     "name": "webpack-bundle",
-    "version": "0.9.64",
+    "version": "0.9.65",
     "repository": "https://github.com/izatop/webpack-bundle",
     "author": {
         "name": "Artur Bier",
