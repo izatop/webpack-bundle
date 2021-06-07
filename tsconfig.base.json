@@ -17,7 +17,7 @@
         "noImplicitAny": true,
         "strictPropertyInitialization": true,
         "strictFunctionTypes": true,
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
     },
     "include": [
         "src"
